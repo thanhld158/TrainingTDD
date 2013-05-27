@@ -7,6 +7,7 @@
 //
 
 #import "StringCalculatorTests.h"
+#import "StringCalculator.h"
 
 @implementation StringCalculatorTests
 
@@ -26,7 +27,17 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in StringCalculatorTests");
+    
 }
+
+- (void)testStringCalculator {
+    STAssertEquals(1, 1, nil);
+    STAssertEquals([StringCalculator add:nil], 0, nil);
+    STAssertEquals([StringCalculator add:@""], 0, nil);
+    STAssertEquals([StringCalculator add:@"1"], 1, nil);
+    //STAssertEquals([StringCalculator add:@"1,2"], 3, nil);
+}
+
+
 
 @end

@@ -24,6 +24,7 @@
 		06921F8E17533C8E00C2F985 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06921F6617533C8E00C2F985 /* Foundation.framework */; };
 		06921F9617533C8F00C2F985 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06921F9417533C8F00C2F985 /* InfoPlist.strings */; };
 		06921F9917533C8F00C2F985 /* StringCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06921F9817533C8F00C2F985 /* StringCalculatorTests.m */; };
+		06921FA4175340AD00C2F985 /* StringCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 06921FA3175340AD00C2F985 /* StringCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		06921F9517533C8F00C2F985 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		06921F9717533C8F00C2F985 /* StringCalculatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringCalculatorTests.h; sourceTree = "<group>"; };
 		06921F9817533C8F00C2F985 /* StringCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringCalculatorTests.m; sourceTree = "<group>"; };
+		06921FA2175340AD00C2F985 /* StringCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringCalculator.h; sourceTree = "<group>"; };
+		06921FA3175340AD00C2F985 /* StringCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringCalculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				06921F7F17533C8E00C2F985 /* ViewController_iPhone.xib */,
 				06921F8217533C8E00C2F985 /* ViewController_iPad.xib */,
 				06921F6B17533C8E00C2F985 /* Supporting Files */,
+				06921FA2175340AD00C2F985 /* StringCalculator.h */,
+				06921FA3175340AD00C2F985 /* StringCalculator.m */,
 			);
 			path = StringCalculator;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 				06921F7117533C8E00C2F985 /* main.m in Sources */,
 				06921F7517533C8E00C2F985 /* AppDelegate.m in Sources */,
 				06921F7E17533C8E00C2F985 /* ViewController.m in Sources */,
+				06921FA4175340AD00C2F985 /* StringCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
