@@ -12,7 +12,8 @@
 
 + (int )add:(NSString *)numbers {
     int length = numbers.length;
-    int sum = 0;
+    __block int sum = 0;
+    NSArray *numberArray;
     
     switch (length) {
         case 0:
@@ -22,7 +23,11 @@
             sum = [numbers intValue];
             break;
         default: {
-            
+            numberArray = [numbers componentsSeparatedByString:@","];
+            [numberArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                NSString *currentNumber = (NSString *)obj;
+                sum += [currentNumber intValue];
+            }];
             break;
         }
     }
