@@ -26,7 +26,16 @@
             numberArray = [numbers componentsSeparatedByString:@","];
             [numberArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
                 NSString *currentNumber = (NSString *)obj;
-                sum += [currentNumber intValue];
+                if ([currentNumber rangeOfString:@"\n"].location == NSNotFound) {
+                    sum += [currentNumber intValue];
+                }else {
+                    NSArray *lineBreakNumberArr = [currentNumber componentsSeparatedByString:@"\n"];
+                    [lineBreakNumberArr enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                        NSString *lineBreakNumber = (NSString *)obj;
+                        sum += [lineBreakNumber intValue];
+                    }];
+                }
+             
             }];
             break;
         }

@@ -36,6 +36,8 @@
     STAssertEquals([StringCalculator add:@""], 0, nil);
     STAssertEquals([StringCalculator add:@"1"], 1, nil);
     STAssertEquals([StringCalculator add:@"1,2"], 3, nil);
+    STAssertEquals([StringCalculator add:@"1,2,3,4,5"], 15, nil);
+    STAssertEquals([StringCalculator add:@"1,2\n2,3\n3,4,5"], 20, nil);
 }
 
 
