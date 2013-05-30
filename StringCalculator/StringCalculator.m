@@ -14,6 +14,7 @@
     int length = numbers.length;
     __block int sum = 0;
     NSArray *numberArray;
+    __block NSString *delimiter = @",";
     
     switch (length) {
         case 0:
@@ -23,7 +24,15 @@
             sum = [numbers intValue];
             break;
         default: {
-            numberArray = [numbers componentsSeparatedByString:@","];
+            NSString *newNumberStr = numbers;
+            if ([numbers rangeOfString:@"//"].location != NSNotFound && [numbers rangeOfString:@"//"].location == 0) {
+                NSRange lineBreak = [numbers rangeOfString:@"\n"];
+                
+                delimiter = [numbers substringWithRange:NSMakeRange(2, lineBreak.location - 2)];
+                newNumberStr = [numbers substringFromIndex:(lineBreak.location + lineBreak.length)];
+            }
+            
+            numberArray = [newNumberStr componentsSeparatedByString:delimiter];
             [numberArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
                 NSString *currentNumber = (NSString *)obj;
                 if ([currentNumber rangeOfString:@"\n"].location == NSNotFound) {
@@ -35,7 +44,7 @@
                         sum += [lineBreakNumber intValue];
                     }];
                 }
-             
+                
             }];
             break;
         }
