@@ -27,10 +27,11 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in StringCalculatorDay6Tests");
+    
 }
 
-- (void)TestAddFunction {
+- (void)testAddFunction {
+    STAssertEquals(1, 1, nil);
     STAssertEquals([StringCalculator add:@""] , 0, nil);
 }
 

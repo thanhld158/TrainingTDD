@@ -9,4 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface StringCalculator : NSObject
+
++ (int )add:(NSString *)numbers;
 @end
