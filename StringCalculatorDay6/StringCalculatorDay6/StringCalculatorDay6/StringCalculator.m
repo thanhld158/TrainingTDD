@@ -23,7 +23,7 @@
             break;
             
         default:
-            return 1;
+            return 3;
             break;
     }
 }
