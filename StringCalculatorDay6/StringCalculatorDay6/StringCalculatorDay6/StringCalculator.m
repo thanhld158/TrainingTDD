@@ -17,6 +17,10 @@
         case 0:
             return 0;
             break;
+
+        case 1:
+            return [numbers intValue];
+            break;
             
         default:
             return 1;
