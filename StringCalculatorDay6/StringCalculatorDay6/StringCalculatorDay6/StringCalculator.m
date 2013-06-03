@@ -11,6 +11,16 @@
 @implementation StringCalculator
 
 + (int )add:(NSString *)numbers {
-    return 0;
+    int length = numbers.length;
+    
+    switch (length) {
+        case 0:
+            return 0;
+            break;
+            
+        default:
+            return 0;
+            break;
+    }
 }
 @end
