@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'StringCalculatorDay8' target in the 'StringCalculatorDay8' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
