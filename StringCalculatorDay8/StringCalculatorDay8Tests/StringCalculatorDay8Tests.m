@@ -35,6 +35,7 @@ describe(@"Test Add function", ^{
     it(@"case 6", ^{
         [[theValue([StringCalculator add:@"// \n1 2 3"]) should] equal:theValue(6)];
     });
+    
 });
 
 SPEC_END

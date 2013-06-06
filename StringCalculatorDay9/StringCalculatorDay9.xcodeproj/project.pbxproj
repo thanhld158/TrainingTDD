@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06F2E0F91760661C00053B5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F2E0F81760661C00053B5B /* Foundation.framework */; };
+		06F2E0FE1760661C00053B5B /* StringCalculatorDay9.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 06F2E0FD1760661C00053B5B /* StringCalculatorDay9.h */; };
+		06F2E1001760661C00053B5B /* StringCalculatorDay9.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F2E0FF1760661C00053B5B /* StringCalculatorDay9.m */; };
+		06F2E1081760661D00053B5B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F2E1071760661D00053B5B /* SenTestingKit.framework */; };
+		06F2E10A1760661D00053B5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F2E1091760661D00053B5B /* UIKit.framework */; };
+		06F2E10B1760661D00053B5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F2E0F81760661C00053B5B /* Foundation.framework */; };
+		06F2E10E1760661D00053B5B /* libStringCalculatorDay9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F2E0F51760661C00053B5B /* libStringCalculatorDay9.a */; };
+		06F2E1141760661D00053B5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06F2E1121760661D00053B5B /* InfoPlist.strings */; };
+		06F2E1171760661D00053B5B /* StringCalculatorDay9Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F2E1161760661D00053B5B /* StringCalculatorDay9Tests.m */; };
+		06F2E122176068B100053B5B /* StringCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F2E121176068B100053B5B /* StringCalculator.m */; };
+		8B34167B82684CE7A5C5A7E1 /* libPods-StringCalculatorDay9Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1428A4323C04CEFB88343E9 /* libPods-StringCalculatorDay9Tests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06F2E10C1760661D00053B5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06F2E0ED1760661C00053B5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06F2E0F41760661C00053B5B;
+			remoteInfo = StringCalculatorDay9;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		06F2E0F31760661C00053B5B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				06F2E0FE1760661C00053B5B /* StringCalculatorDay9.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		015692DCD7CD40ED8F1B1510 /* Pods-StringCalculatorDay9Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StringCalculatorDay9Tests.xcconfig"; path = "Pods/Pods-StringCalculatorDay9Tests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		06F2E0F51760661C00053B5B /* libStringCalculatorDay9.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStringCalculatorDay9.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		06F2E0F81760661C00053B5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		06F2E0FC1760661C00053B5B /* StringCalculatorDay9-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StringCalculatorDay9-Prefix.pch"; sourceTree = "<group>"; };
+		06F2E0FD1760661C00053B5B /* StringCalculatorDay9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringCalculatorDay9.h; sourceTree = "<group>"; };
+		06F2E0FF1760661C00053B5B /* StringCalculatorDay9.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringCalculatorDay9.m; sourceTree = "<group>"; };
+		06F2E1061760661D00053B5B /* StringCalculatorDay9Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringCalculatorDay9Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06F2E1071760661D00053B5B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		06F2E1091760661D00053B5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		06F2E1111760661D00053B5B /* StringCalculatorDay9Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StringCalculatorDay9Tests-Info.plist"; sourceTree = "<group>"; };
+		06F2E1131760661D00053B5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06F2E1161760661D00053B5B /* StringCalculatorDay9Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringCalculatorDay9Tests.m; sourceTree = "<group>"; };
+		06F2E120176068B100053B5B /* StringCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringCalculator.h; sourceTree = "<group>"; };
+		06F2E121176068B100053B5B /* StringCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringCalculator.m; sourceTree = "<group>"; };
+		F1428A4323C04CEFB88343E9 /* libPods-StringCalculatorDay9Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StringCalculatorDay9Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06F2E0F21760661C00053B5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F2E0F91760661C00053B5B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06F2E1021760661D00053B5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F2E1081760661D00053B5B /* SenTestingKit.framework in Frameworks */,
+				06F2E10A1760661D00053B5B /* UIKit.framework in Frameworks */,
+				06F2E10B1760661D00053B5B /* Foundation.framework in Frameworks */,
+				06F2E10E1760661D00053B5B /* libStringCalculatorDay9.a in Frameworks */,
+				8B34167B82684CE7A5C5A7E1 /* libPods-StringCalculatorDay9Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06F2E0EC1760661C00053B5B = {
+			isa = PBXGroup;
+			children = (
+				06F2E0FA1760661C00053B5B /* StringCalculatorDay9 */,
+				06F2E10F1760661D00053B5B /* StringCalculatorDay9Tests */,
+				06F2E0F71760661C00053B5B /* Frameworks */,
+				06F2E0F61760661C00053B5B /* Products */,
+				015692DCD7CD40ED8F1B1510 /* Pods-StringCalculatorDay9Tests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		06F2E0F61760661C00053B5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06F2E0F51760661C00053B5B /* libStringCalculatorDay9.a */,
+				06F2E1061760661D00053B5B /* StringCalculatorDay9Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06F2E0F71760661C00053B5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06F2E0F81760661C00053B5B /* Foundation.framework */,
+				06F2E1071760661D00053B5B /* SenTestingKit.framework */,
+				06F2E1091760661D00053B5B /* UIKit.framework */,
+				F1428A4323C04CEFB88343E9 /* libPods-StringCalculatorDay9Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06F2E0FA1760661C00053B5B /* StringCalculatorDay9 */ = {
+			isa = PBXGroup;
+			children = (
+				06F2E0FD1760661C00053B5B /* StringCalculatorDay9.h */,
+				06F2E0FF1760661C00053B5B /* StringCalculatorDay9.m */,
+				06F2E0FB1760661C00053B5B /* Supporting Files */,
+				06F2E120176068B100053B5B /* StringCalculator.h */,
+				06F2E121176068B100053B5B /* StringCalculator.m */,
+			);
+			path = StringCalculatorDay9;
+			sourceTree = "<group>";
+		};
+		06F2E0FB1760661C00053B5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06F2E0FC1760661C00053B5B /* StringCalculatorDay9-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06F2E10F1760661D00053B5B /* StringCalculatorDay9Tests */ = {
+			isa = PBXGroup;
+			children = (
+				06F2E1161760661D00053B5B /* StringCalculatorDay9Tests.m */,
+				06F2E1101760661D00053B5B /* Supporting Files */,
+			);
+			path = StringCalculatorDay9Tests;
+			sourceTree = "<group>";
+		};
+		06F2E1101760661D00053B5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06F2E1111760661D00053B5B /* StringCalculatorDay9Tests-Info.plist */,
+				06F2E1121760661D00053B5B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06F2E0F41760661C00053B5B /* StringCalculatorDay9 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06F2E11A1760661D00053B5B /* Build configuration list for PBXNativeTarget "StringCalculatorDay9" */;
+			buildPhases = (
+				06F2E0F11760661C00053B5B /* Sources */,
+				06F2E0F21760661C00053B5B /* Frameworks */,
+				06F2E0F31760661C00053B5B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StringCalculatorDay9;
+			productName = StringCalculatorDay9;
+			productReference = 06F2E0F51760661C00053B5B /* libStringCalculatorDay9.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		06F2E1051760661D00053B5B /* StringCalculatorDay9Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06F2E11D1760661D00053B5B /* Build configuration list for PBXNativeTarget "StringCalculatorDay9Tests" */;
+			buildPhases = (
+				556238A7C4804469BC028977 /* Check Pods Manifest.lock */,
+				06F2E1011760661D00053B5B /* Sources */,
+				06F2E1021760661D00053B5B /* Frameworks */,
+				06F2E1031760661D00053B5B /* Resources */,
+				06F2E1041760661D00053B5B /* ShellScript */,
+				6AECF7D6A1264045A43BBDF5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06F2E10D1760661D00053B5B /* PBXTargetDependency */,
+			);
+			name = StringCalculatorDay9Tests;
+			productName = StringCalculatorDay9Tests;
+			productReference = 06F2E1061760661D00053B5B /* StringCalculatorDay9Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06F2E0ED1760661C00053B5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Qsoft;
+			};
+			buildConfigurationList = 06F2E0F01760661C00053B5B /* Build configuration list for PBXProject "StringCalculatorDay9" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 06F2E0EC1760661C00053B5B;
+			productRefGroup = 06F2E0F61760661C00053B5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06F2E0F41760661C00053B5B /* StringCalculatorDay9 */,
+				06F2E1051760661D00053B5B /* StringCalculatorDay9Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06F2E1031760661D00053B5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F2E1141760661D00053B5B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06F2E1041760661D00053B5B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		556238A7C4804469BC028977 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		6AECF7D6A1264045A43BBDF5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-StringCalculatorDay9Tests-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06F2E0F11760661C00053B5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F2E1001760661C00053B5B /* StringCalculatorDay9.m in Sources */,
+				06F2E122176068B100053B5B /* StringCalculator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06F2E1011760661D00053B5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F2E1171760661D00053B5B /* StringCalculatorDay9Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06F2E10D1760661D00053B5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06F2E0F41760661C00053B5B /* StringCalculatorDay9 */;
+			targetProxy = 06F2E10C1760661D00053B5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06F2E1121760661D00053B5B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06F2E1131760661D00053B5B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06F2E1181760661D00053B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		06F2E1191760661D00053B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06F2E11B1760661D00053B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/StringCalculatorDay9.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StringCalculatorDay9/StringCalculatorDay9-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		06F2E11C1760661D00053B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/StringCalculatorDay9.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StringCalculatorDay9/StringCalculatorDay9-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		06F2E11E1760661D00053B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 015692DCD7CD40ED8F1B1510 /* Pods-StringCalculatorDay9Tests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StringCalculatorDay9/StringCalculatorDay9-Prefix.pch";
+				INFOPLIST_FILE = "StringCalculatorDay9Tests/StringCalculatorDay9Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		06F2E11F1760661D00053B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 015692DCD7CD40ED8F1B1510 /* Pods-StringCalculatorDay9Tests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StringCalculatorDay9/StringCalculatorDay9-Prefix.pch";
+				INFOPLIST_FILE = "StringCalculatorDay9Tests/StringCalculatorDay9Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06F2E0F01760661C00053B5B /* Build configuration list for PBXProject "StringCalculatorDay9" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06F2E1181760661D00053B5B /* Debug */,
+				06F2E1191760661D00053B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06F2E11A1760661D00053B5B /* Build configuration list for PBXNativeTarget "StringCalculatorDay9" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06F2E11B1760661D00053B5B /* Debug */,
+				06F2E11C1760661D00053B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06F2E11D1760661D00053B5B /* Build configuration list for PBXNativeTarget "StringCalculatorDay9Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06F2E11E1760661D00053B5B /* Debug */,
+				06F2E11F1760661D00053B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06F2E0ED1760661C00053B5B /* Project object */;
+}
