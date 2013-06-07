@@ -37,7 +37,6 @@
                 delimiter = [subStringNumber substringToIndex:afterCharacterRange.location];
                 subStringNumberFinal = [subStringNumber substringFromIndex:(afterCharacterRange.location + afterCharacterRange.length)];
                 characterSetString = [characterSetString stringByAppendingString:delimiter];
-                
             }
             
             NSArray *numbersArray = [subStringNumberFinal componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:characterSetString]];
