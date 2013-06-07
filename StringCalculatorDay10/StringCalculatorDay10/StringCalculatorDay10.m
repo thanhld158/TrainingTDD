@@ -44,6 +44,7 @@
             
             for (NSString *currentNumber in numbersArray) {
                 if ([currentNumber intValue] < 0) {
+                    [negativesNumberArr addObject:currentNumber];
                     NSLog(@"negatives not allowed!");
                 }else {
                     sum += [currentNumber intValue];
@@ -53,6 +54,7 @@
             break;
     }
     
+    NSLog(@"negatives not allowed: %@", [negativesNumberArr description]);
     return sum;
 }
 
