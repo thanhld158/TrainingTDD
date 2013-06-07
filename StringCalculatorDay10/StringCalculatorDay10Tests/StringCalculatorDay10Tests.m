@@ -40,6 +40,10 @@ SPEC_BEGIN(TestStringCalculatorDay10)
             [[theValue([StringCalculatorDay10 add:@"//;\n1;2;-5;3;-4;6;1002;8"]) should] equal:theValue(20)];
         });
         
+        it(@"case 8", ^{
+            [[theValue([StringCalculatorDay10 add:@"//***\n1***2***3"]) should] equal:theValue(7)];
+        });
+        
     });
 
 SPEC_END
