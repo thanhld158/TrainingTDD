@@ -15,6 +15,11 @@ SPEC_BEGIN(TestStringCalculatorDay10)
         it(@"case 1", ^{
             [[theValue([StringCalculatorDay10 add:@""]) should] equal:theValue(0)];
         });
+        
+        it(@"case 2", ^{
+            [[theValue([StringCalculatorDay10 add:@"1"]) should] equal:theValue(1)];
+        });
+        
     });
 
 SPEC_END
