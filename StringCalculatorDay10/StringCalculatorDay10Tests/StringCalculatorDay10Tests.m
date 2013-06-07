@@ -20,6 +20,10 @@ SPEC_BEGIN(TestStringCalculatorDay10)
             [[theValue([StringCalculatorDay10 add:@"1"]) should] equal:theValue(1)];
         });
         
+        it(@"case 3", ^{
+            [[theValue([StringCalculatorDay10 add:@"1,2"]) should] equal:theValue(3)];
+        });
+        
     });
 
 SPEC_END

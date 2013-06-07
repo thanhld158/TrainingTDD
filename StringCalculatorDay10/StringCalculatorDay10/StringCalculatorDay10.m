@@ -10,6 +10,9 @@
 
 @implementation StringCalculatorDay10
 
+#define frontOfCharacterDelimiter @"//"
+#define afterCharacterDelimiter @"\n"
+
 + (int)add:(NSString *)numbers {
     int length = numbers.length;
     int sum = 0;
