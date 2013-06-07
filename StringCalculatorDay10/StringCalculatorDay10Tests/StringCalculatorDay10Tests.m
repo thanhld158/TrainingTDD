@@ -48,6 +48,17 @@ SPEC_BEGIN(TestStringCalculatorDay10)
             [[theValue([StringCalculatorDay10 add:@"//[*][%]\n1*2%3"]) should] equal:theValue(6)];
         });
         
+        it(@"case 10", ^{
+            [[theValue([StringCalculatorDay10 add:@"//[**][%]\n1**2%3"]) should] equal:theValue(6)];
+        });
+        
+        it(@"case 11", ^{
+            [[theValue([StringCalculatorDay10 add:@"//[**][%!@]\n1**2%!@3%!@4"]) should] equal:theValue(10)];
+        });
+        
+        it(@"case 12", ^{
+            [[theValue([StringCalculatorDay10 add:@"//[**][%!@]\n1**2%!@3%!@4,5"]) should] equal:theValue(15)];
+        });
     });
 
 SPEC_END
