@@ -20,7 +20,7 @@
             break;
             
         default: {
-            return 1;
+            sum += [numbers intValue];
         }
             break;
     }
