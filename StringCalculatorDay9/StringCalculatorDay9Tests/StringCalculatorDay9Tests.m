@@ -33,7 +33,7 @@ SPEC_BEGIN(TestStringCalculator)
         });
         
         it(@"case 6", ^{
-            [[theValue([StringCalculator add:@"//;\n1;2;-5;3;-4;6"]) should] equal:theValue(12)];
+            [[theValue([StringCalculator add:@"//;\n1;2;-5;3;-4;6,8"]) should] equal:theValue(12)];
         });
         
         it(@"case 7", ^{

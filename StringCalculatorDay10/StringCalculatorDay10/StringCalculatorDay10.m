@@ -28,16 +28,22 @@
             NSString *delimiter;
             NSString *characterSetString = @",\n";
             
-            if ([numbers rangeOfString:@"//"].location != NSNotFound) {
-                sum = 3;
-            }else {
-                NSArray *numbersArray = [numbers componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:characterSetString]];
+            subStringNumber = subStringNumberFinal = numbers;
+            
+            if ([numbers rangeOfString:frontOfCharacterDelimiter].location != NSNotFound) {
+                subStringNumber = [numbers substringFromIndex:2];
+                NSRange afterCharacterRange = [subStringNumber rangeOfString:afterCharacterDelimiter];
+                delimiter = [subStringNumber substringToIndex:afterCharacterRange.location];
+                subStringNumberFinal = [subStringNumber substringFromIndex:(afterCharacterRange.location + afterCharacterRange.length)];
+                characterSetString = [characterSetString stringByAppendingString:delimiter];
                 
-                for (NSString *currentNumber in numbersArray) {
-                    sum += [currentNumber intValue];
-                }
             }
             
+            NSArray *numbersArray = [subStringNumberFinal componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:characterSetString]];
+            
+            for (NSString *currentNumber in numbersArray) {
+                sum += [currentNumber intValue];
+            }
         }
             break;
     }
