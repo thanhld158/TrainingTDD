@@ -23,7 +23,13 @@
             break;
             
         default: {
-            sum += [numbers intValue];
+            NSString *characterSetString = @",";
+            
+            NSArray *numbersArray = [numbers componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:characterSetString]];
+            
+            for (NSString *currentNumber in numbersArray) {
+                sum += [currentNumber intValue];
+            }
         }
             break;
     }
