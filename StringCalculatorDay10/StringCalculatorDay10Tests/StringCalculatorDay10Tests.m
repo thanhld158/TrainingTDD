@@ -41,7 +41,7 @@ SPEC_BEGIN(TestStringCalculatorDay10)
         });
         
         it(@"case 8", ^{
-            [[theValue([StringCalculatorDay10 add:@"//***\n1***2***3"]) should] equal:theValue(7)];
+            [[theValue([StringCalculatorDay10 add:@"//***\n1***2***3"]) should] equal:theValue(6)];
         });
         
     });
