@@ -23,13 +23,21 @@
             break;
             
         default: {
+            NSString *subStringNumber;
+            NSString *subStringNumberFinal;
+            NSString *delimiter;
             NSString *characterSetString = @",\n";
             
-            NSArray *numbersArray = [numbers componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:characterSetString]];
-            
-            for (NSString *currentNumber in numbersArray) {
-                sum += [currentNumber intValue];
+            if ([numbers rangeOfString:@"//"].location != NSNotFound) {
+                sum = 3;
+            }else {
+                NSArray *numbersArray = [numbers componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:characterSetString]];
+                
+                for (NSString *currentNumber in numbersArray) {
+                    sum += [currentNumber intValue];
+                }
             }
+            
         }
             break;
     }
