@@ -11,7 +11,20 @@
 @implementation StringCalculatorDay10
 
 + (int)add:(NSString *)numbers {
-    return 0;
+    int length = numbers.length;
+    int sum = 0;
+    
+    switch (length) {
+        case 0:
+            sum = 0;
+            break;
+            
+        default: {
+            
+        }
+            break;
+    }
+    return sum;
 }
 
 @end
