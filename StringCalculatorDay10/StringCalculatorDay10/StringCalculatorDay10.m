@@ -10,4 +10,8 @@
 
 @implementation StringCalculatorDay10
 
++ (int)add:(NSString *)numbers {
+    return 0;
+}
+
 @end

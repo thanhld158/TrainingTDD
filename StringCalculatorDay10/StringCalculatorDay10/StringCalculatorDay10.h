@@ -10,4 +10,6 @@
 
 @interface StringCalculatorDay10 : NSObject
 
++ (int)add:(NSString *)numbers;
+
 @end
