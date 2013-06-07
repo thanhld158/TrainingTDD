@@ -23,7 +23,7 @@
             break;
             
         default: {
-            NSString *characterSetString = @",";
+            NSString *characterSetString = @",\n";
             
             NSArray *numbersArray = [numbers componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:characterSetString]];
             
