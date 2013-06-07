@@ -49,6 +49,7 @@
                     continue;
                 }else if ([currentNumber intValue] > 1000) {
                     NSLog(@"This number bigger than 1000!");
+                    continue;
                 } else {
                     sum += [currentNumber intValue];
                 }
