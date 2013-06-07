@@ -16,6 +16,7 @@
 + (int)add:(NSString *)numbers {
     int length = numbers.length;
     int sum = 0;
+    NSMutableArray *negativesNumberArr = [NSMutableArray arrayWithCapacity:0];
     
     switch (length) {
         case 0:
@@ -42,11 +43,16 @@
             NSArray *numbersArray = [subStringNumberFinal componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:characterSetString]];
             
             for (NSString *currentNumber in numbersArray) {
-                sum += [currentNumber intValue];
+                if ([currentNumber intValue] < 0) {
+                    NSLog(@"negatives not allowed!");
+                }else {
+                    sum += [currentNumber intValue];
+                }
             }
         }
             break;
     }
+    
     return sum;
 }
 
