@@ -57,6 +57,19 @@
             break;
     }
     
+    // Throw exception negative numbers
+    if (negativesNumberArr.count > 0) {
+        NSMutableString *reason = [[NSMutableString alloc] initWithFormat:@"negative numbers:"];
+        for (int i = 0; i < negativesNumberArr.count; i ++) {
+            if (i == 0) {
+                [reason appendFormat:@"%@", negativesNumberArr[i]];
+                continue;
+            }
+            [reason appendFormat:@",%@", negativesNumberArr[i]];
+        }
+        @throw ( [NSException exceptionWithName:@"AddNegativeNumber" reason:reason userInfo:nil]);
+    }
+    
     NSLog(@"negatives not allowed: %@", [negativesNumberArr description]);
     return sum;
 }
