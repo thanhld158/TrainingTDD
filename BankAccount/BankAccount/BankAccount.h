@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+@class BankAccountDAO;
+@class Account;
 
 @interface BankAccount : NSObject
+
+-(id)initWithDAO:(BankAccountDAO *)daoObject;
+
+@property (nonatomic, strong) BankAccountDAO *bankAccountDAO;
+
+-(Account *)openAccount:(NSString *)accountNumber;
+- (Account *)createNewAccoutWithAccountNumber:(NSString *)accString;
+- (Account *)getAccount:(NSString *)accountNumber;
 
 @end

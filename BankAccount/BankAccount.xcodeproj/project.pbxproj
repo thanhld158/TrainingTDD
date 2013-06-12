@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		066802A11768533D00AE0E57 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 066802A01768533D00AE0E57 /* Account.m */; };
+		066802A41768535B00AE0E57 /* BankAccountDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 066802A31768535B00AE0E57 /* BankAccountDAO.m */; };
 		06839EAE176701F600DAAEDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06839EAD176701F600DAAEDA /* Foundation.framework */; };
 		06839EB3176701F600DAAEDA /* BankAccount.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 06839EB2176701F600DAAEDA /* BankAccount.h */; };
 		06839EB5176701F600DAAEDA /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 06839EB4176701F600DAAEDA /* BankAccount.m */; };
@@ -43,6 +45,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0668029F1768533D00AE0E57 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		066802A01768533D00AE0E57 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		066802A21768535B00AE0E57 /* BankAccountDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountDAO.h; sourceTree = "<group>"; };
+		066802A31768535B00AE0E57 /* BankAccountDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountDAO.m; sourceTree = "<group>"; };
 		06839EAA176701F600DAAEDA /* libBankAccount.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBankAccount.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		06839EAD176701F600DAAEDA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		06839EB1176701F600DAAEDA /* BankAccount-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BankAccount-Prefix.pch"; sourceTree = "<group>"; };
@@ -82,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0668029E176852B000AE0E57 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				0668029F1768533D00AE0E57 /* Account.h */,
+				066802A01768533D00AE0E57 /* Account.m */,
+				066802A21768535B00AE0E57 /* BankAccountDAO.h */,
+				066802A31768535B00AE0E57 /* BankAccountDAO.m */,
+			);
+			name = DataAccess;
+			sourceTree = "<group>";
+		};
 		06839EA1176701F600DAAEDA = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +133,7 @@
 		06839EAF176701F600DAAEDA /* BankAccount */ = {
 			isa = PBXGroup;
 			children = (
+				0668029E176852B000AE0E57 /* DataAccess */,
 				06839EB2176701F600DAAEDA /* BankAccount.h */,
 				06839EB4176701F600DAAEDA /* BankAccount.m */,
 				06839EB0176701F600DAAEDA /* Supporting Files */,
@@ -278,6 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				06839EB5176701F600DAAEDA /* BankAccount.m in Sources */,
+				066802A11768533D00AE0E57 /* Account.m in Sources */,
+				066802A41768535B00AE0E57 /* BankAccountDAO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
