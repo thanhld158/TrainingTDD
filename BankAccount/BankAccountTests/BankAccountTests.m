@@ -36,11 +36,9 @@ describe(@"BankAccount Test", ^{
             NSString *mockAccountNumber = [NSString nullMock];
             
             Account *mockAccount = [Account nullMock];
-            
             Account *accountExpect;
             
             [[sut should] receive:@selector(createNewAccoutWithAccountNumber:) andReturn:mockAccount withArguments:mockAccountNumber];
-            
             [mockDao stub:@selector(insertToDBWithAccount:) andReturn:mockAccount withArguments:mockAccount];
             
             accountExpect = [sut openAccount:mockAccountNumber];
@@ -79,6 +77,27 @@ describe(@"BankAccount Test", ^{
             
             accountResult = [sut getAccount:mockAccoutNumber];
             [[accountResult.accountNumber should] equal:mockAccoutNumber];
+        });
+        
+        it(@"Deposit money to account", ^{
+            NSString *mockAccountNumber = [NSString nullMock];
+            NSNumber *mockAmount = [NSNumber nullMock];
+            NSString *mockDescription = [NSString nullMock];
+            NSNumber *preBalance;
+            
+            Account *accountResult;
+            Account *mockAccount = [Account nullMock];
+            Account *preAccount;
+            
+            preAccount = [sut getAccount:mockAccountNumber];
+            preBalance = preAccount.balance;
+            
+            [mockAccount stub:@selector(accountNumber) andReturn:mockAccountNumber];
+            [mockDao stub:@selector(deposit:moneyAmount:andDes:) andReturn:mockAccount withArguments:mockAccountNumber, mockAmount, mockDescription];
+            
+            accountResult = [sut deposit:mockDescription moneyAmount:mockAmount andDes:mockDescription];
+            [[accountResult.balance should] equal:[NSNumber numberWithFloat:([preBalance floatValue] + [mockAmount floatValue])]];
+            
         });
     });
     

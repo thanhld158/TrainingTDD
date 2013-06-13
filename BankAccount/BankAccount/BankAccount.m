@@ -39,4 +39,8 @@
     return acc;
 }
 
+- (Account *)deposit:(NSString *)accountNumber moneyAmount:(NSNumber *)amount andDes:(NSString *)des {
+    return nil;
+}
+
 @end
