@@ -40,7 +40,9 @@
 }
 
 - (Account *)deposit:(NSString *)accountNumber moneyAmount:(NSNumber *)amount andDes:(NSString *)des {
-    return nil;
+    NSDictionary *accdict = [bankAccountDAO deposit:accountNumber moneyAmount:amount andDes:des];
+    Account *accAfter = [accdict objectForKey:@"accountAfter"];
+    return accAfter;
 }
 
 @end

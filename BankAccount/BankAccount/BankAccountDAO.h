@@ -15,4 +15,6 @@
 
 - (Account *)getAccount:(NSString *)accountNumber;
 
+- (NSDictionary *)deposit:(NSString *)accountNumber moneyAmount:(NSNumber *)amount andDes:(NSString *)des;//key:accountBefore, accountAfter
+
 @end
