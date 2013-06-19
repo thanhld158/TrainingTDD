@@ -10,6 +10,7 @@
 #import "BankAccount.h"
 #import "BankAccountDAO.h"
 #import "Account.h"
+#import "AccountLog.h"
 
 SPEC_BEGIN(BankAccountServiceTest)
 describe(@"BankAccount Test", ^{
@@ -96,6 +97,17 @@ describe(@"BankAccount Test", ^{
             accountReturn = [sut deposit:mockAccountNumber moneyAmount:mockAmount andDes:mockDescription];
             [[theValue(accountReturn.balance.integerValue) should] equal:theValue(accountBefore.balance.integerValue + mockAmount.integerValue)];
         });
+        
+        it(@"Save infomation into db when deposit", ^{
+            Account *accountBefore = [Account nullMock];
+            Account *accountAfter;
+            NSString *mockAccountNumber = [NSString nullMock];
+            
+            AccountLog *accountLogAfter = [AccountLog nullMock];
+            AccountLog *accountLogExpect;
+            
+        });
+        
     });
     
 });
