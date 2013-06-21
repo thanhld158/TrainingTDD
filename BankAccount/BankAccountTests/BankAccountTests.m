@@ -11,16 +11,18 @@
 #import "BankAccountDAO.h"
 #import "Account.h"
 #import "AccountLog.h"
+#import "AccountLogDAO.h"
 
 SPEC_BEGIN(BankAccountServiceTest)
 describe(@"BankAccount Test", ^{
     
     __block BankAccountDAO *mockDao;
+    __block AccountLogDAO *mockLogDao;
     __block BankAccount *sut;
     
     beforeEach(^{
         mockDao = [BankAccountDAO nullMock];
-        sut = [[BankAccount alloc] initWithDAO:mockDao];
+        sut = [[BankAccount alloc] initWithDAO:mockDao andLogDAO:mockLogDao];
     });
     
     afterEach(^{
@@ -99,13 +101,19 @@ describe(@"BankAccount Test", ^{
         });
         
         it(@"Save infomation into db when deposit", ^{
-            Account *accountBefore = [Account nullMock];
             Account *accountAfter;
             NSString *mockAccountNumber = [NSString nullMock];
+            NSNumber *mockAmount = [NSNumber nullMock];
+            NSString *mockDescription = [NSString nullMock];
+            NSDate *mockDate = [NSDate nullMock];
+            Account *accountShouldBeReturned = [Account nullMock];
             
-            AccountLog *accountLogAfter = [AccountLog nullMock];
-            AccountLog *accountLogExpect;
+            [accountShouldBeReturned stub:@selector(timestamp) andReturn:mockDate];
+            [[mockDao should] receive:@selector(deposit:moneyAmount:andDes:) andReturn:mockDate withArguments:mockAccountNumber, mockAmount, mockDescription];
+            [mockDao stub:@selector(deposit:moneyAmount:andDes:) andReturn:accountShouldBeReturned withArguments:mockAccountNumber, mockAmount, mockDescription];
             
+            accountAfter = [sut deposit:mockAccountNumber moneyAmount:mockAmount andDes:mockDescription];
+            [[accountAfter.timestamp should] equal:accountShouldBeReturned.timestamp];
         });
         
     });

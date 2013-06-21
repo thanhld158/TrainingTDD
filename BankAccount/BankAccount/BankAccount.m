@@ -9,14 +9,18 @@
 #import "BankAccount.h"
 #import "BankAccountDAO.h"
 #import "Account.h"
+#import "AccountLog.h"
+#import "AccountLogDAO.h"
 
 @implementation BankAccount
 
 @synthesize bankAccountDAO;
+@synthesize accountLogDAO;
 
--(id)initWithDAO:(BankAccountDAO *)daoObject {
+-(id)initWithDAO:(BankAccountDAO *)daoObject andLogDAO:(AccountLogDAO *)logDAO{
     if (self = [super init]) {
         bankAccountDAO = daoObject;
+        accountLogDAO = logDAO;
     }
     return self;
 }
@@ -40,8 +44,18 @@
 }
 
 - (Account *)deposit:(NSString *)accountNumber moneyAmount:(NSNumber *)amount andDes:(NSString *)des {
+    AccountLog *accountLog = [[AccountLog alloc] init];
+    accountLog.accountNumber = accountNumber;
+    accountLog.amount = amount;
+    accountLog.description = des;
+    NSDate *dateDepo = [NSDate date];
+    accountLog.timestamp = dateDepo;
+    
     NSDictionary *accdict = [bankAccountDAO deposit:accountNumber moneyAmount:amount andDes:des];
     Account *accAfter = [accdict objectForKey:@"accountAfter"];
+    
+    AccountLog *resultLog = []
+    
     return accAfter;
 }
 
