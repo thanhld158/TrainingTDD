@@ -19,25 +19,29 @@ describe(@"BankAccount Test", ^{
     __block BankAccountDAO *mockDao;
     __block AccountLogDAO *mockLogDao;
     __block BankAccount *sut;
+    __block NSString *mockAccountNumber;
     
     beforeEach(^{
         mockDao = [BankAccountDAO nullMock];
+        mockLogDao = [AccountLogDAO nullMock];
+        mockAccountNumber = [NSString nullMock];
         sut = [[BankAccount alloc] initWithDAO:mockDao andLogDAO:mockLogDao];
     });
     
     afterEach(^{
         mockDao = nil;
         sut = nil;
+        mockLogDao = nil;
+        mockAccountNumber = nil;
     });
     
     context(@"set up BankAccount", ^{
         it(@"bankAccountDAO shoud be exists", ^{
             [[sut.bankAccountDAO should] equal:mockDao];
+            [[sut.accountLogDAO should] equal:mockLogDao];
         });
         
         it(@"open new account with account number", ^{
-            NSString *mockAccountNumber = [NSString nullMock];
-            
             Account *mockAccount = [Account nullMock];
             Account *accountExpect;
             
@@ -49,14 +53,10 @@ describe(@"BankAccount Test", ^{
         });
         
         it(@"open new account with failure", ^{
-            NSString *mockAccountNumber = [NSString nullMock];
-            
             Account *mockAccount = [Account nullMock];
-            
             Account *accountExpect;
             
             [[sut should] receive:@selector(createNewAccoutWithAccountNumber:) andReturn:mockAccount withArguments:mockAccountNumber];
-            
             [mockDao stub:@selector(insertToDBWithAccount:) andReturn:nil withArguments:mockAccount];
             
             accountExpect = [sut openAccount:mockAccountNumber];
@@ -71,50 +71,68 @@ describe(@"BankAccount Test", ^{
         });
         
         it(@"Get account", ^{
-            NSString *mockAccoutNumber = [NSString nullMock];
             Account *mockAccount = [Account nullMock];
             Account *accountResult;
             
-            [mockAccount stub:@selector(accountNumber) andReturn:mockAccoutNumber];
-            [mockDao stub:@selector(getAccount:) andReturn:mockAccount withArguments:mockAccoutNumber];
+            [mockAccount stub:@selector(accountNumber) andReturn:mockAccountNumber];
+            [mockDao stub:@selector(getAccount:) andReturn:mockAccount withArguments:mockAccountNumber];
             
-            accountResult = [sut getAccount:mockAccoutNumber];
-            [[accountResult.accountNumber should] equal:mockAccoutNumber];
+            accountResult = [sut getAccount:mockAccountNumber];
+            [[accountResult.accountNumber should] equal:mockAccountNumber];
         });
         
+    });
+    
+    context(@"Deposit money into account", ^{
         it(@"Deposit money to account", ^{
-            NSString *mockAccountNumber = [NSString nullMock];
-            NSNumber *mockAmount = [NSNumber nullMock];
-            [mockAmount stub:@selector(integerValue) andReturn:theValue(10)];
+            NSNumber *mockAmount = @(123.45);
             
             NSString *mockDescription = [NSString nullMock];
             Account *accountBefore = [Account nullMock];
-            Account *accountReturn;
-            Account *accountShouldBeReturned = [Account nullMock];
+            Account *accountReturn = nil;
             
-            [accountShouldBeReturned stub:@selector(balance) andReturn:[NSNumber numberWithInteger:(accountBefore.balance.integerValue + mockAmount.integerValue)]];
+            [accountBefore stub:@selector(balance) andReturn:@(3)];
+            // Check getAccount: was call or not
+            [[sut should] receive:@selector(getAccount:) andReturn:accountBefore withArguments:mockAccountNumber];
+            [sut stub:@selector(getAccount:) andReturn:accountBefore withArguments:mockAccountNumber];
             
-            [mockDao stub:@selector(deposit:moneyAmount:andDes:) andReturn:@{@"accountBefore":accountBefore, @"accountAfter":accountShouldBeReturned} withArguments:mockAccountNumber, mockAmount, mockDescription];
+            [[mockDao should] receive:@selector(updateAcountWithAcount:) andReturn:theValue(YES) withArguments:any()];
+            [mockDao stub:@selector(updateAcountWithAcount:) andReturn:theValue(YES) withArguments:accountReturn];
             
             accountReturn = [sut deposit:mockAccountNumber moneyAmount:mockAmount andDes:mockDescription];
-            [[theValue(accountReturn.balance.integerValue) should] equal:theValue(accountBefore.balance.integerValue + mockAmount.integerValue)];
+            [[theValue(accountReturn.balance.doubleValue) should] equal:theValue(accountBefore.balance.doubleValue + mockAmount.doubleValue)];
         });
         
-        it(@"Save infomation into db when deposit", ^{
-            Account *accountAfter;
-            NSString *mockAccountNumber = [NSString nullMock];
+        it(@"Create a account log when deposit", ^{
             NSNumber *mockAmount = [NSNumber nullMock];
             NSString *mockDescription = [NSString nullMock];
             NSDate *mockDate = [NSDate nullMock];
-            Account *accountShouldBeReturned = [Account nullMock];
             
-            [accountShouldBeReturned stub:@selector(timestamp) andReturn:mockDate];
-            [[mockDao should] receive:@selector(deposit:moneyAmount:andDes:) andReturn:mockDate withArguments:mockAccountNumber, mockAmount, mockDescription];
-            [mockDao stub:@selector(deposit:moneyAmount:andDes:) andReturn:accountShouldBeReturned withArguments:mockAccountNumber, mockAmount, mockDescription];
+            [NSDate stub:@selector(date) andReturn:mockDate];
+            
+            AccountLog *accLog = [sut createAccountLogWithAccNumber:mockAccountNumber moneyAmount:mockAmount andDes:mockDescription];
+            
+            [[accLog.accountNumber should]equal:mockAccountNumber];
+            [[accLog.amount should] equal:mockAmount];
+            [[accLog.description should] equal:mockDescription];
+            [[accLog.timestamp should] equal:mockDate];
+        });
+        
+        it(@"Save infomation (Account log)  into db when deposit", ^{
+            Account *accountAfter;
+            NSNumber *mockAmount = [NSNumber nullMock];
+            NSString *mockDescription = [NSString nullMock];
+            
+            [[mockDao should] receive:@selector(updateAcountWithAcount:) andReturn:theValue(YES)];
+            [[mockLogDao should] receive:@selector(insertToDBWithAccountLog:)];
+            // Check createAccount was call or not
+            [[sut should] receive:@selector(createAccountLogWithAccNumber:moneyAmount:andDes:)];
             
             accountAfter = [sut deposit:mockAccountNumber moneyAmount:mockAmount andDes:mockDescription];
-            [[accountAfter.timestamp should] equal:accountShouldBeReturned.timestamp];
         });
+    });
+    
+    context(@"BankAccount with draw", ^{
         
     });
     

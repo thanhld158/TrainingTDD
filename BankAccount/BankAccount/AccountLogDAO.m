@@ -7,7 +7,11 @@
 //
 
 #import "AccountLogDAO.h"
+#import "AccountLog.h"
 
 @implementation AccountLogDAO
 
+- (AccountLog *)insertToDBWithAccountLog:(AccountLog *)accLog {
+    return nil;
+}
 @end

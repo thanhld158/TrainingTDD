@@ -18,7 +18,7 @@
     return nil;
 }
 
-- (NSDictionary *)deposit:(NSString *)accountNumber moneyAmount:(NSNumber *)amount andDes:(NSString *)des {
-    return nil;
+- (BOOL)updateAcountWithAcount:(Account *)acc {
+    return NO;
 }
 @end

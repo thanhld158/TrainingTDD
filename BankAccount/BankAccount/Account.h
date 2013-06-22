@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AccountLog.h"
 
 @interface Account : NSObject
 

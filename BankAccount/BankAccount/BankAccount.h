@@ -22,5 +22,6 @@
 - (Account *)createNewAccoutWithAccountNumber:(NSString *)accString;
 - (Account *)getAccount:(NSString *)accountNumber;
 - (Account *)deposit:(NSString *)accountNumber moneyAmount:(NSNumber *)amount andDes:(NSString *)des;
+- (AccountLog *)createAccountLogWithAccNumber:(NSString *)accNumber moneyAmount:(NSNumber *)amount andDes:(NSString *)des;
 
 @end

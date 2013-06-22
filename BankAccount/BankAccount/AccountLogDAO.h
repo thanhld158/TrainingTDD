@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AccountLog.h"
 
 @interface AccountLogDAO : NSObject
 
+- (AccountLog *)insertToDBWithAccountLog:(AccountLog *)accLog;
 @end

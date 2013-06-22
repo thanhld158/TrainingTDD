@@ -43,20 +43,30 @@
     return acc;
 }
 
+- (AccountLog *)createAccountLogWithAccNumber:(NSString *)accNumber moneyAmount:(NSNumber *)amount andDes:(NSString *)des {
+    AccountLog *accLog = [[AccountLog alloc] init];
+    accLog.accountNumber = accNumber;
+    accLog.amount = amount;
+    accLog.description = des;
+    NSDate *timeStamp = [NSDate date];
+    accLog.timestamp = timeStamp;
+    return accLog;
+}
+
 - (Account *)deposit:(NSString *)accountNumber moneyAmount:(NSNumber *)amount andDes:(NSString *)des {
-    AccountLog *accountLog = [[AccountLog alloc] init];
-    accountLog.accountNumber = accountNumber;
-    accountLog.amount = amount;
-    accountLog.description = des;
-    NSDate *dateDepo = [NSDate date];
-    accountLog.timestamp = dateDepo;
+    Account *accountBefore = [self getAccount:accountNumber];
+    Account *accountAfter = [[Account alloc] init];
+    accountAfter.accountNumber = accountBefore.accountNumber;
+    accountAfter.balance = @(accountBefore.balance.doubleValue + amount.doubleValue);
+    accountAfter.openTimestamp = accountBefore.openTimestamp;
     
-    NSDictionary *accdict = [bankAccountDAO deposit:accountNumber moneyAmount:amount andDes:des];
-    Account *accAfter = [accdict objectForKey:@"accountAfter"];
+    if ([bankAccountDAO updateAcountWithAcount:accountAfter]) {
+        AccountLog *accLog = [self createAccountLogWithAccNumber:accountNumber moneyAmount:amount andDes:des];
+        [accountLogDAO insertToDBWithAccountLog:accLog];
+    }else
+        accountAfter = nil;
     
-    AccountLog *resultLog = []
-    
-    return accAfter;
+    return accountAfter;
 }
 
 @end
