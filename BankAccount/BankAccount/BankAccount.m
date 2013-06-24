@@ -69,4 +69,18 @@
     return accountAfter;
 }
 
+- (Account *)withdraw:(NSString *)accountNumber moneyAmount:(NSNumber *)amount andDes:(NSString *)des {
+    Account *accountBefore = [self getAccount:accountNumber];
+    Account *accountAfter = [[Account alloc] init];
+    accountAfter.accountNumber = accountBefore.accountNumber;
+    accountAfter.balance = @(accountBefore.balance.doubleValue - amount.doubleValue);
+    accountAfter.openTimestamp = accountBefore.openTimestamp;
+    
+    if ([bankAccountDAO updateAcountWithAcount:accountAfter]) {
+        
+    }else
+        accountAfter = nil;
+    
+    return accountAfter;
+}
 @end

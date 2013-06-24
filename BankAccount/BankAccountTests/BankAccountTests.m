@@ -132,8 +132,23 @@ describe(@"BankAccount Test", ^{
         });
     });
     
-    context(@"BankAccount with draw", ^{
-        
+    context(@"BankAccount withdraw", ^{
+        it(@"Withdraw from account, result is balance of account was decrease amountnumber", ^{
+            Account *accountBeforeWithdraw = [Account nullMock];
+            [accountBeforeWithdraw stub:@selector(balance) andReturn:@(150)];
+            NSNumber *amount = @(10);
+            NSString *description = [NSString nullMock];
+            Account *accountReturn;
+            
+            [[sut should] receive:@selector(getAccount:) andReturn:accountBeforeWithdraw withArguments:mockAccountNumber];
+            [sut stub:@selector(getAccount:) andReturn:accountBeforeWithdraw withArguments:mockAccountNumber];
+            
+            [[mockDao should] receive:@selector(updateAcountWithAcount:) andReturn:theValue(YES) withArguments:any()];
+            [mockDao stub:@selector(updateAcountWithAcount:) andReturn:theValue(YES) withArguments:any()];
+            
+            accountReturn = [sut withdraw:mockAccountNumber moneyAmount:amount andDes:description];
+            [[accountReturn.balance should] equal:@(accountBeforeWithdraw.balance.doubleValue - amount.doubleValue)];
+        });
     });
     
 });
