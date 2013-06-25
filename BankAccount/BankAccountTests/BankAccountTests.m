@@ -133,7 +133,7 @@ describe(@"BankAccount Test", ^{
     });
     
     context(@"BankAccount withdraw", ^{
-        it(@"Withdraw from account, result is balance of account was decrease amountnumber", ^{
+        it(@"5. Withdraw from account, result is balance of account was decrease amountnumber", ^{
             Account *accountBeforeWithdraw = [Account nullMock];
             [accountBeforeWithdraw stub:@selector(balance) andReturn:@(150)];
             NSNumber *amount = @(10);
@@ -149,8 +149,23 @@ describe(@"BankAccount Test", ^{
             accountReturn = [sut withdraw:mockAccountNumber moneyAmount:amount andDes:description];
             [[accountReturn.balance should] equal:@(accountBeforeWithdraw.balance.doubleValue - amount.doubleValue)];
         });
+        
+        it(@"6. Save infomation (Account log) into db when withdraw", ^{
+            Account *accountAfter;
+            NSNumber *mockAmount = [NSNumber nullMock];
+            NSString *mockDescription = [NSString nullMock];
+            
+            [[mockDao should] receive:@selector(updateAcountWithAcount:) andReturn:theValue(YES)];
+            [[mockLogDao should] receive:@selector(insertToDBWithAccountLog:)];
+            [[sut should] receive:@selector(createAccountLogWithAccNumber:moneyAmount:andDes:)];
+            
+            accountAfter = [sut withdraw:mockAccountNumber moneyAmount:mockAmount andDes:mockDescription];
+        });
     });
     
+    context(@"7. Get transaction list with a accountNumber", ^{
+        
+    });
 });
 
 SPEC_END

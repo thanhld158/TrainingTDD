@@ -77,7 +77,8 @@
     accountAfter.openTimestamp = accountBefore.openTimestamp;
     
     if ([bankAccountDAO updateAcountWithAcount:accountAfter]) {
-        
+        AccountLog *accLog = [self createAccountLogWithAccNumber:accountNumber moneyAmount:@(-amount.doubleValue) andDes:des];
+        [accountLogDAO insertToDBWithAccountLog:accLog];
     }else
         accountAfter = nil;
     
