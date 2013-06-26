@@ -14,4 +14,8 @@
 - (AccountLog *)insertToDBWithAccountLog:(AccountLog *)accLog {
     return nil;
 }
+
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber {
+    return nil;
+}
 @end

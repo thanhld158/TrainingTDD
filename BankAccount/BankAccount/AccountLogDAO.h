@@ -12,4 +12,5 @@
 @interface AccountLogDAO : NSObject
 
 - (AccountLog *)insertToDBWithAccountLog:(AccountLog *)accLog;
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber;
 @end

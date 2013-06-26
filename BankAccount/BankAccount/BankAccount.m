@@ -15,12 +15,12 @@
 @implementation BankAccount
 
 @synthesize bankAccountDAO;
-@synthesize accountLogDAO;
+@synthesize bankAccountLogDAO;
 
 -(id)initWithDAO:(BankAccountDAO *)daoObject andLogDAO:(AccountLogDAO *)logDAO{
     if (self = [super init]) {
         bankAccountDAO = daoObject;
-        accountLogDAO = logDAO;
+        bankAccountLogDAO = logDAO;
     }
     return self;
 }
@@ -62,7 +62,7 @@
     
     if ([bankAccountDAO updateAcountWithAcount:accountAfter]) {
         AccountLog *accLog = [self createAccountLogWithAccNumber:accountNumber moneyAmount:amount andDes:des];
-        [accountLogDAO insertToDBWithAccountLog:accLog];
+        [bankAccountLogDAO insertToDBWithAccountLog:accLog];
     }else
         accountAfter = nil;
     
@@ -78,10 +78,16 @@
     
     if ([bankAccountDAO updateAcountWithAcount:accountAfter]) {
         AccountLog *accLog = [self createAccountLogWithAccNumber:accountNumber moneyAmount:@(-amount.doubleValue) andDes:des];
-        [accountLogDAO insertToDBWithAccountLog:accLog];
+        [bankAccountLogDAO insertToDBWithAccountLog:accLog];
     }else
         accountAfter = nil;
     
     return accountAfter;
+}
+
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber {
+    NSMutableArray *transactionList = [NSMutableArray arrayWithCapacity:0];
+    transactionList = [[bankAccountLogDAO getTransactionsOccurred:accountNumber] mutableCopy];
+    return transactionList;
 }
 @end

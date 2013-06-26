@@ -38,7 +38,7 @@ describe(@"BankAccount Test", ^{
     context(@"set up BankAccount", ^{
         it(@"bankAccountDAO shoud be exists", ^{
             [[sut.bankAccountDAO should] equal:mockDao];
-            [[sut.accountLogDAO should] equal:mockLogDao];
+            [[sut.bankAccountLogDAO should] equal:mockLogDao];
         });
         
         it(@"open new account with account number", ^{
@@ -163,8 +163,21 @@ describe(@"BankAccount Test", ^{
         });
     });
     
-    context(@"7. Get transaction list with a accountNumber", ^{
+    context(@"7.8.9. Get transaction list with a accountNumber", ^{
+        it(@"Get transaction list with a account number", ^{
+            NSArray *transactionList;
+            NSArray *mockTransactionList = [NSArray nullMock];
+            
+            //Check getTransactionsOccurred was call or not
+            [[mockLogDao should] receive:@selector(getTransactionsOccurred:) andReturn:mockTransactionList withArguments:mockAccountNumber];
+            
+            transactionList = [sut getTransactionsOccurred:mockAccountNumber];
+        });
         
+        it(@"Get transaction list between startTime and stopTime", ^{
+            NSDate *startDate = [NSDate nullMock];
+            NSDate *stopDate = [NSDate nullMock];
+        });
     });
 });
 

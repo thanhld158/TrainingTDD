@@ -13,10 +13,10 @@
 
 @interface BankAccount : NSObject
 
--(id)initWithDAO:(BankAccountDAO *)daoObject andLogDAO:(AccountLogDAO *)accountLogDAO;
+-(id)initWithDAO:(BankAccountDAO *)daoObject andLogDAO:(AccountLogDAO *)bankAccountLogDAO;
 
 @property (nonatomic, strong) BankAccountDAO *bankAccountDAO;
-@property (nonatomic, strong) AccountLogDAO *accountLogDAO;
+@property (nonatomic, strong) AccountLogDAO *bankAccountLogDAO;
 
 -(Account *)openAccount:(NSString *)accountNumber;
 - (Account *)createNewAccoutWithAccountNumber:(NSString *)accString;
@@ -24,5 +24,5 @@
 - (Account *)deposit:(NSString *)accountNumber moneyAmount:(NSNumber *)amount andDes:(NSString *)des;
 - (AccountLog *)createAccountLogWithAccNumber:(NSString *)accNumber moneyAmount:(NSNumber *)amount andDes:(NSString *)des;
 - (Account *)withdraw:(NSString *)accountNumber moneyAmount:(NSNumber *)amount andDes:(NSString *)des;
-
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber;
 @end

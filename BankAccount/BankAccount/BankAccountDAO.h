@@ -16,4 +16,5 @@
 - (Account *)getAccount:(NSString *)accountNumber;
 
 - (BOOL)updateAcountWithAcount:(Account *)acc;
+
 @end
