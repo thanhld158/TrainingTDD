@@ -90,4 +90,17 @@
     transactionList = [[bankAccountLogDAO getTransactionsOccurred:accountNumber] mutableCopy];
     return transactionList;
 }
+
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber startTime:(NSDate *)startTime stopTime:(NSDate *)stopTime {
+    NSMutableArray *transactionList = [NSMutableArray arrayWithCapacity:0];
+    transactionList = [[bankAccountLogDAO getTransactionsOccurred:accountNumber startTime:startTime stopTime:stopTime] mutableCopy];
+    return transactionList;
+}
+
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber numberItem:(NSNumber *)nItem {
+    NSMutableArray *transactionList = [NSMutableArray arrayWithCapacity:0];
+    transactionList = [[bankAccountLogDAO getTransactionsOccurred:accountNumber numberItem:nItem] mutableCopy];
+    return transactionList;
+}
+
 @end

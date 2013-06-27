@@ -18,4 +18,12 @@
 - (NSArray *)getTransactionsOccurred:(NSString *)accountNumber {
     return nil;
 }
+
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber startTime:(NSDate *)startTime stopTime:(NSDate *)stopTime {
+    return nil;
+}
+
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber numberItem:(NSNumber *)nItem {
+    return nil;
+}
 @end

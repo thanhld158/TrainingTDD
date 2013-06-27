@@ -13,4 +13,6 @@
 
 - (AccountLog *)insertToDBWithAccountLog:(AccountLog *)accLog;
 - (NSArray *)getTransactionsOccurred:(NSString *)accountNumber;
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber startTime:(NSDate *)startTime stopTime:(NSDate *)stopTime;
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber numberItem:(NSNumber *)nItem;
 @end

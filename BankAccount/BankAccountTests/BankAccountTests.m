@@ -164,7 +164,7 @@ describe(@"BankAccount Test", ^{
     });
     
     context(@"7.8.9. Get transaction list with a accountNumber", ^{
-        it(@"Get transaction list with a account number", ^{
+        it(@"7. Get transaction list with a account number", ^{
             NSArray *transactionList;
             NSArray *mockTransactionList = [NSArray nullMock];
             
@@ -174,9 +174,23 @@ describe(@"BankAccount Test", ^{
             transactionList = [sut getTransactionsOccurred:mockAccountNumber];
         });
         
-        it(@"Get transaction list between startTime and stopTime", ^{
+        it(@"8. Get transaction list between startTime and stopTime", ^{
             NSDate *startDate = [NSDate nullMock];
             NSDate *stopDate = [NSDate nullMock];
+            
+            // Check getTransactionOccurred was call or not
+            [[mockLogDao should] receive:@selector(getTransactionsOccurred:startTime:stopTime:) withArguments:mockAccountNumber, startDate, stopDate];
+            
+            [sut getTransactionsOccurred:mockAccountNumber startTime:startDate stopTime:stopDate];
+        });
+        
+        it(@"9. Get transaction list with n newest items", ^{
+            NSNumber *nItem = [NSNumber nullMock];
+            
+            // Check
+            [[mockLogDao should] receive:@selector(getTransactionsOccurred:numberItem:) withArguments:mockAccountNumber, nItem];
+            
+            [sut getTransactionsOccurred:mockAccountNumber numberItem:nItem];
         });
     });
 });
