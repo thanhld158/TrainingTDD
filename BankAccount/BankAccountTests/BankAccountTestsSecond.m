@@ -32,7 +32,29 @@ describe(@"Bank Account Test Second", ^{
     });
     
     context(@"Setup bank account", ^{
+        it(@"1. Open new account", ^{
+            Account2 *accReturn;
+            NSDate *openDate = [NSDate nullMock];
+            
+            [NSDate stub:@selector(date) andReturn:openDate];
+            [[bankAccountDAO should] receive:@selector(insertNewAccount:) andReturn:any()];
+            [bankAccountDAO stub:@selector(insertNewAccount:) andReturn:theValue(YES)];
+            
+            accReturn = [sut open:mockAccountNumber];
+            [[accReturn.accountNumber should] equal:mockAccountNumber];
+            [[accReturn.balance should] equal:@(0)];
+            [[accReturn.openTimestamp should] equal:openDate];
+        });
         
+        it(@"2. Get infomation of an account with accountNumber argument", ^{
+            Account2 *accReturn;
+            Account2 *accShouldReturn = [Account2 nullMock];
+            [accShouldReturn stub:@selector(accountNumber) andReturn:mockAccountNumber];
+            [bankAccountDAO stub:@selector(getAccount:) andReturn:accShouldReturn withArguments:mockAccountNumber];
+            
+            accReturn = [sut getAccount:mockAccountNumber];
+            [[accReturn.accountNumber should] equal:mockAccountNumber];
+        });
     });
 });
 

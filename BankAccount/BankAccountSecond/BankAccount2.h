@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "BankAccountDAO2.h"
+#import "Account2.h"
 
 @interface BankAccount2 : NSObject
 
 @property (strong, nonatomic)BankAccountDAO2 *bankAccountDAO;
+
+- (Account2 *)open:(NSString *)accountNumber;
+- (Account2 *)getAccount:(NSString *)accountNumber;
 @end

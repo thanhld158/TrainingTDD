@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Account2.h"
 
 @interface BankAccountDAO2 : NSObject
 
+- (BOOL )insertNewAccount:(Account2 *)newAccount;
+- (Account2 *)getAccount:(NSString *)accountNumber;
 @end

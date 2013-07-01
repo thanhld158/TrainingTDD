@@ -10,4 +10,11 @@
 
 @implementation BankAccountDAO2
 
+- (BOOL )insertNewAccount:(Account2 *)newAccount {
+    return NO;
+}
+
+- (Account2 *)getAccount:(NSString *)accountNumber {
+    return nil;
+}
 @end
