@@ -56,6 +56,26 @@ describe(@"Bank Account Test Second", ^{
             [[accReturn.accountNumber should] equal:mockAccountNumber];
         });
     });
+    
+    context(@"Operation with a bank account", ^{
+        it(@"3. deposit money into account, result: balance increase amount", ^{
+            Account2 *accBefore = [Account2 nullMock];
+            Account2 *accReturn;
+            NSNumber *amount = @(100);
+            NSString *des = @"deposit";
+            
+            [accBefore stub:@selector(balance) andReturn:@(50)];
+            [sut stub:@selector(getAccount:) andReturn:accBefore withArguments:mockAccountNumber];
+            [bankAccountDAO stub:@selector(updateBankAccount:) andReturn:theValue(YES)];
+            
+            accReturn = [sut deposit:mockAccountNumber amount:amount andDescription:des];
+            [[accReturn.balance should] equal:@(accBefore.balance.doubleValue + amount.doubleValue)];
+        });
+        
+        it(@"4. deposit infomation will be saved into db", ^{
+            
+        });
+    });
 });
 
 SPEC_END

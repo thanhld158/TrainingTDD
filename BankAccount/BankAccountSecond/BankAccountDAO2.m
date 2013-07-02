@@ -17,4 +17,8 @@
 - (Account2 *)getAccount:(NSString *)accountNumber {
     return nil;
 }
+
+- (BOOL)updateBankAccount:(Account2 *)account {
+    return NO;
+}
 @end

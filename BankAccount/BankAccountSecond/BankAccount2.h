@@ -16,4 +16,5 @@
 
 - (Account2 *)open:(NSString *)accountNumber;
 - (Account2 *)getAccount:(NSString *)accountNumber;
+- (Account2 *)deposit:(NSString *)accountNumber amount:(NSNumber *)amount andDescription:(NSString *)des;
 @end

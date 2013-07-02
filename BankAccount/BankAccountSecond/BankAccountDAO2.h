@@ -13,4 +13,5 @@
 
 - (BOOL )insertNewAccount:(Account2 *)newAccount;
 - (Account2 *)getAccount:(NSString *)accountNumber;
+- (BOOL)updateBankAccount:(Account2 *)account;
 @end

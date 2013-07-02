@@ -18,6 +18,7 @@
 		06839EC3176701F700DAAEDA /* libBankAccount.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06839EAA176701F600DAAEDA /* libBankAccount.a */; };
 		06839EC9176701F700DAAEDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06839EC7176701F700DAAEDA /* InfoPlist.strings */; };
 		06839ECC176701F700DAAEDA /* BankAccountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06839ECB176701F700DAAEDA /* BankAccountTests.m */; };
+		06C4D8F01782B48500B36155 /* AccountLog2.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C4D8EF1782B48500B36155 /* AccountLog2.m */; };
 		06C54C62177D69070087A488 /* BankAccountTestsSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C54C61177D69070087A488 /* BankAccountTestsSecond.m */; };
 		06C54C67177D6AB80087A488 /* BankAccount2.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C54C66177D6AB80087A488 /* BankAccount2.m */; };
 		06C54C6C177D6AFE0087A488 /* Account2.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C54C6B177D6AFE0087A488 /* Account2.m */; };
@@ -66,6 +67,8 @@
 		06839EC6176701F700DAAEDA /* BankAccountTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BankAccountTests-Info.plist"; sourceTree = "<group>"; };
 		06839EC8176701F700DAAEDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		06839ECB176701F700DAAEDA /* BankAccountTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAccountTests.m; sourceTree = "<group>"; };
+		06C4D8EE1782B48500B36155 /* AccountLog2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLog2.h; sourceTree = "<group>"; };
+		06C4D8EF1782B48500B36155 /* AccountLog2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLog2.m; sourceTree = "<group>"; };
 		06C54C61177D69070087A488 /* BankAccountTestsSecond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountTestsSecond.m; sourceTree = "<group>"; };
 		06C54C65177D6AB80087A488 /* BankAccount2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccount2.h; sourceTree = "<group>"; };
 		06C54C66177D6AB80087A488 /* BankAccount2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount2.m; sourceTree = "<group>"; };
@@ -224,6 +227,8 @@
 			children = (
 				06C54C6A177D6AFE0087A488 /* Account2.h */,
 				06C54C6B177D6AFE0087A488 /* Account2.m */,
+				06C4D8EE1782B48500B36155 /* AccountLog2.h */,
+				06C4D8EF1782B48500B36155 /* AccountLog2.m */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -361,6 +366,7 @@
 				066802A41768535B00AE0E57 /* BankAccountDAO.m in Sources */,
 				06CF10FF1771925E0036EA36 /* AccountLog.m in Sources */,
 				06D1268C1774373A004088C9 /* AccountLogDAO.m in Sources */,
+				06C4D8F01782B48500B36155 /* AccountLog2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

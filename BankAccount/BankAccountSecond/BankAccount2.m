@@ -30,4 +30,18 @@
     return accInfo;
 }
 
+- (Account2 *)deposit:(NSString *)accountNumber amount:(NSNumber *)amount andDescription:(NSString *)des {
+    Account2 *accBefore = [self getAccount:accountNumber];
+    
+    Account2 *accAfter = [[Account2 alloc] init];
+    accAfter.accountNumber = accountNumber;
+    accAfter.openTimestamp = accBefore.openTimestamp;
+    accAfter.balance = @(accBefore.balance.doubleValue + amount.doubleValue);
+    
+    if ([bankAccountDAO updateBankAccount:accAfter]) {
+        return accAfter;
+    }
+    return nil;
+}
+
 @end
