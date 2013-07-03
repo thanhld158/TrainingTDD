@@ -25,6 +25,7 @@
 		06C54C6F177D6B260087A488 /* BankAccountDAO2.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C54C6E177D6B260087A488 /* BankAccountDAO2.m */; };
 		06CF10FF1771925E0036EA36 /* AccountLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CF10FE1771925E0036EA36 /* AccountLog.m */; };
 		06D1268C1774373A004088C9 /* AccountLogDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D1268B1774373A004088C9 /* AccountLogDAO.m */; };
+		06FB8C301783FE3700C947D0 /* BankAccountLogDAO2.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FB8C2F1783FE3700C947D0 /* BankAccountLogDAO2.m */; };
 		B1DE2A34C8BD4130A4D6C648 /* libPods-BankAccountTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FBCE003CD3475AB25172C8 /* libPods-BankAccountTests.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,8 @@
 		06CF10FE1771925E0036EA36 /* AccountLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLog.m; sourceTree = "<group>"; };
 		06D1268A1774373A004088C9 /* AccountLogDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLogDAO.h; sourceTree = "<group>"; };
 		06D1268B1774373A004088C9 /* AccountLogDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLogDAO.m; sourceTree = "<group>"; };
+		06FB8C2E1783FE3700C947D0 /* BankAccountLogDAO2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountLogDAO2.h; sourceTree = "<group>"; };
+		06FB8C2F1783FE3700C947D0 /* BankAccountLogDAO2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountLogDAO2.m; sourceTree = "<group>"; };
 		32A769F2F55949938B49E9A8 /* Pods-BankAccountTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAccountTests.xcconfig"; path = "Pods/Pods-BankAccountTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		38FBCE003CD3475AB25172C8 /* libPods-BankAccountTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BankAccountTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -218,6 +221,8 @@
 			children = (
 				06C54C6D177D6B260087A488 /* BankAccountDAO2.h */,
 				06C54C6E177D6B260087A488 /* BankAccountDAO2.m */,
+				06FB8C2E1783FE3700C947D0 /* BankAccountLogDAO2.h */,
+				06FB8C2F1783FE3700C947D0 /* BankAccountLogDAO2.m */,
 			);
 			name = DAO;
 			sourceTree = "<group>";
@@ -367,6 +372,7 @@
 				06CF10FF1771925E0036EA36 /* AccountLog.m in Sources */,
 				06D1268C1774373A004088C9 /* AccountLogDAO.m in Sources */,
 				06C4D8F01782B48500B36155 /* AccountLog2.m in Sources */,
+				06FB8C301783FE3700C947D0 /* BankAccountLogDAO2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
