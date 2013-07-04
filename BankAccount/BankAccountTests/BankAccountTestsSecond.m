@@ -122,6 +122,28 @@ describe(@"Bank Account Test Second", ^{
             accReturn = [sut withdraw:mockAccountNumber amount:amount andDescription:des];
         });
     });
+    
+    context(@"Operation with transaction", ^{
+        it(@"7. Get transaction list with an account", ^{
+            NSArray *transactionList;
+            
+            // Check DAO
+            [[bankAccountLogDAO should] receive:@selector(getTransactionsOccurredWithAccountNumber:) withArguments:mockAccountNumber];
+            
+            transactionList = [sut getTransactionsOccurred:mockAccountNumber];
+        });
+        
+        it(@"8. Get transaction list between startTime and stopTime", ^{
+            NSArray *transactionList;
+            NSDate *startTime = [NSDate nullMock];
+            NSDate *stopTime = [NSDate nullMock];
+            
+            // Check DAO
+            [[bankAccountLogDAO should] receive:@selector(getTransactionsOccurredWithAccountNumber:startTime:stopTime:) withArguments:mockAccountNumber, startTime, stopTime];
+            
+            transactionList = [sut getTransactionsOccurred:mockAccountNumber startTime:startTime stopTime:stopTime];
+        });
+    });
 });
 
 SPEC_END

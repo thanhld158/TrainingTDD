@@ -13,4 +13,12 @@
 - (BOOL)insertAccountLog:(AccountLog2 *)accLog {
     return NO;
 }
+
+- (NSArray *)getTransactionsOccurredWithAccountNumber:(NSString *)accountNumber {
+    return nil;
+}
+
+- (NSArray *)getTransactionsOccurredWithAccountNumber:(NSString *)accountNumber startTime:(NSDate *)startTime stopTime:(NSDate *)stopTime {
+    return nil;
+}
 @end

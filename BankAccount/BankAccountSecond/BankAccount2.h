@@ -22,4 +22,6 @@
 - (Account2 *)withdraw:(NSString *)accountNumber amount:(NSNumber *)amount andDescription:(NSString *)des;
 - (AccountLog2 *)createAccountLogWithAccountNumber:(NSString *)accountNumber amount:(NSNumber *)amount
                                             andDes:(NSString *)des;
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber;
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber startTime:(NSDate *)startTime stopTime:(NSDate *)stopTime;
 @end
