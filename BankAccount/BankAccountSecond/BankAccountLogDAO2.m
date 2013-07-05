@@ -21,4 +21,8 @@
 - (NSArray *)getTransactionsOccurredWithAccountNumber:(NSString *)accountNumber startTime:(NSDate *)startTime stopTime:(NSDate *)stopTime {
     return nil;
 }
+
+- (NSArray *)getTransactionsOccurredWithAccountNumber:(NSString *)accountNumber andTransactionNumber:(NSInteger )transNumber {
+    return nil;
+}
 @end

@@ -83,4 +83,9 @@
     return transactionList;
 }
 
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber andTransactionNumber:(NSInteger )transNumber {
+    NSArray *transactionList = [bankAccountLogDAO getTransactionsOccurredWithAccountNumber:accountNumber andTransactionNumber:transNumber];
+    return transactionList;
+}
+
 @end

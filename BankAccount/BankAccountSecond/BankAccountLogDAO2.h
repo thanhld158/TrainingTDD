@@ -14,4 +14,5 @@
 - (BOOL)insertAccountLog:(AccountLog2 *)accLog;
 - (NSArray *)getTransactionsOccurredWithAccountNumber:(NSString *)accountNumber;
 - (NSArray *)getTransactionsOccurredWithAccountNumber:(NSString *)accountNumber startTime:(NSDate *)startTime stopTime:(NSDate *)stopTime;
+- (NSArray *)getTransactionsOccurredWithAccountNumber:(NSString *)accountNumber andTransactionNumber:(NSInteger )transNumber;
 @end

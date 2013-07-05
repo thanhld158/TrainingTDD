@@ -143,6 +143,16 @@ describe(@"Bank Account Test Second", ^{
             
             transactionList = [sut getTransactionsOccurred:mockAccountNumber startTime:startTime stopTime:stopTime];
         });
+        
+        it(@"9. Get n newest transaction list was performed", ^{
+            NSArray *transactionList;
+            NSInteger transNumber = 100;
+            
+            // Check DAO
+            [[bankAccountLogDAO should] receive:@selector(getTransactionsOccurredWithAccountNumber:andTransactionNumber:) withArguments:mockAccountNumber, theValue(transNumber)];
+            
+            transactionList = [sut getTransactionsOccurred:mockAccountNumber andTransactionNumber:transNumber];
+        });
     });
 });
 

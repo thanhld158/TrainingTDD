@@ -25,6 +25,10 @@
 		06C54C6F177D6B260087A488 /* BankAccountDAO2.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C54C6E177D6B260087A488 /* BankAccountDAO2.m */; };
 		06CF10FF1771925E0036EA36 /* AccountLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CF10FE1771925E0036EA36 /* AccountLog.m */; };
 		06D1268C1774373A004088C9 /* AccountLogDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D1268B1774373A004088C9 /* AccountLogDAO.m */; };
+		06D5A3451786A55C00268251 /* BankAccountTestThird.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D5A3441786A55C00268251 /* BankAccountTestThird.m */; };
+		06D5A3481786A5CA00268251 /* BankAccount3.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D5A3471786A5CA00268251 /* BankAccount3.m */; };
+		06D5A34E1786A61900268251 /* Account3.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D5A34D1786A61900268251 /* Account3.m */; };
+		06D5A3511786A63400268251 /* BankAccountDAO3.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D5A3501786A63400268251 /* BankAccountDAO3.m */; };
 		06FB8C301783FE3700C947D0 /* BankAccountLogDAO2.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FB8C2F1783FE3700C947D0 /* BankAccountLogDAO2.m */; };
 		B1DE2A34C8BD4130A4D6C648 /* libPods-BankAccountTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FBCE003CD3475AB25172C8 /* libPods-BankAccountTests.a */; };
 /* End PBXBuildFile section */
@@ -81,6 +85,13 @@
 		06CF10FE1771925E0036EA36 /* AccountLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLog.m; sourceTree = "<group>"; };
 		06D1268A1774373A004088C9 /* AccountLogDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLogDAO.h; sourceTree = "<group>"; };
 		06D1268B1774373A004088C9 /* AccountLogDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLogDAO.m; sourceTree = "<group>"; };
+		06D5A3441786A55C00268251 /* BankAccountTestThird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountTestThird.m; sourceTree = "<group>"; };
+		06D5A3461786A5CA00268251 /* BankAccount3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccount3.h; sourceTree = "<group>"; };
+		06D5A3471786A5CA00268251 /* BankAccount3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount3.m; sourceTree = "<group>"; };
+		06D5A34C1786A61900268251 /* Account3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account3.h; sourceTree = "<group>"; };
+		06D5A34D1786A61900268251 /* Account3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account3.m; sourceTree = "<group>"; };
+		06D5A34F1786A63400268251 /* BankAccountDAO3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountDAO3.h; sourceTree = "<group>"; };
+		06D5A3501786A63400268251 /* BankAccountDAO3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountDAO3.m; sourceTree = "<group>"; };
 		06FB8C2E1783FE3700C947D0 /* BankAccountLogDAO2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountLogDAO2.h; sourceTree = "<group>"; };
 		06FB8C2F1783FE3700C947D0 /* BankAccountLogDAO2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountLogDAO2.m; sourceTree = "<group>"; };
 		32A769F2F55949938B49E9A8 /* Pods-BankAccountTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAccountTests.xcconfig"; path = "Pods/Pods-BankAccountTests.xcconfig"; sourceTree = SOURCE_ROOT; };
@@ -129,6 +140,7 @@
 		06839EA1176701F600DAAEDA = {
 			isa = PBXGroup;
 			children = (
+				06D5A3421786A54300268251 /* BankAccountThird */,
 				06C54C63177D69E60087A488 /* BankAccountSecond */,
 				06839EAF176701F600DAAEDA /* BankAccount */,
 				06839EC4176701F700DAAEDA /* BankAccountTests */,
@@ -183,6 +195,7 @@
 			children = (
 				06839ECB176701F700DAAEDA /* BankAccountTests.m */,
 				06C54C61177D69070087A488 /* BankAccountTestsSecond.m */,
+				06D5A3441786A55C00268251 /* BankAccountTestThird.m */,
 			);
 			path = BankAccountTests;
 			sourceTree = "<group>";
@@ -236,6 +249,43 @@
 				06C4D8EF1782B48500B36155 /* AccountLog2.m */,
 			);
 			name = Entities;
+			sourceTree = "<group>";
+		};
+		06D5A3421786A54300268251 /* BankAccountThird */ = {
+			isa = PBXGroup;
+			children = (
+				06D5A3491786A5D400268251 /* DataAccess */,
+				06D5A3461786A5CA00268251 /* BankAccount3.h */,
+				06D5A3471786A5CA00268251 /* BankAccount3.m */,
+			);
+			path = BankAccountThird;
+			sourceTree = "<group>";
+		};
+		06D5A3491786A5D400268251 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				06D5A34B1786A5EE00268251 /* DAO */,
+				06D5A34A1786A5E400268251 /* Entities */,
+			);
+			name = DataAccess;
+			sourceTree = "<group>";
+		};
+		06D5A34A1786A5E400268251 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				06D5A34C1786A61900268251 /* Account3.h */,
+				06D5A34D1786A61900268251 /* Account3.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		06D5A34B1786A5EE00268251 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				06D5A34F1786A63400268251 /* BankAccountDAO3.h */,
+				06D5A3501786A63400268251 /* BankAccountDAO3.m */,
+			);
+			name = DAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +435,10 @@
 				06C54C67177D6AB80087A488 /* BankAccount2.m in Sources */,
 				06C54C6C177D6AFE0087A488 /* Account2.m in Sources */,
 				06C54C6F177D6B260087A488 /* BankAccountDAO2.m in Sources */,
+				06D5A3451786A55C00268251 /* BankAccountTestThird.m in Sources */,
+				06D5A3481786A5CA00268251 /* BankAccount3.m in Sources */,
+				06D5A34E1786A61900268251 /* Account3.m in Sources */,
+				06D5A3511786A63400268251 /* BankAccountDAO3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,4 +24,5 @@
                                             andDes:(NSString *)des;
 - (NSArray *)getTransactionsOccurred:(NSString *)accountNumber;
 - (NSArray *)getTransactionsOccurred:(NSString *)accountNumber startTime:(NSDate *)startTime stopTime:(NSDate *)stopTime;
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber andTransactionNumber:(NSInteger )transNumber;
 @end
