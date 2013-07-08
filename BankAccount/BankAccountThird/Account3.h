@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Account3 : NSObject
-
+@property (strong, nonatomic) NSString *accountNumber;
+@property (strong, nonatomic) NSNumber *balance;
+@property (strong, nonatomic) NSDate *openTimeStamp;
 @end

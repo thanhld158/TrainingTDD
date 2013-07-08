@@ -9,5 +9,7 @@
 #import "Account3.h"
 
 @implementation Account3
-
+@synthesize accountNumber;
+@synthesize balance;
+@synthesize openTimeStamp;
 @end

@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Account3.h"
+#import "BankAccountDAO3.h"
 
 @interface BankAccount3 : NSObject
 
+@property(strong, nonatomic)BankAccountDAO3 *bankAccountDAO;
+
+- (Account3 *)open:(NSString *)accountNumber;
+- (Account3 *)getAccount:(NSString *)accountNumber;
 @end
