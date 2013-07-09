@@ -9,11 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "Account3.h"
 #import "BankAccountDAO3.h"
+#import "AccountLog3.h"
+#import "BankAccountLogDAO3.m"
 
 @interface BankAccount3 : NSObject
 
 @property(strong, nonatomic)BankAccountDAO3 *bankAccountDAO;
+@property(strong, nonatomic)BankAccountLogDAO3 *bankAccountLogDAO;
 
 - (Account3 *)open:(NSString *)accountNumber;
 - (Account3 *)getAccount:(NSString *)accountNumber;
+- (Account3 *)deposit:(NSString *)accountNumber amount:(NSNumber *)amount andDes:(NSString *)des;
+- (AccountLog3 *)createAccLogWithAccountNumber:(NSString *)accNumber amount:(NSNumber *)amount andDes:(NSString *)des;
 @end

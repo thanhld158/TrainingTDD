@@ -12,4 +12,5 @@
 @interface BankAccountDAO3 : NSObject
 - (BOOL)insertNewAccount:(Account3 *)newAcc;
 - (Account3 *)getAccountWithAccountNumber:(NSString *)accountNumber;
+- (BOOL )updateAccount:(Account3 *)account;
 @end
