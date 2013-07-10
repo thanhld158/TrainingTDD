@@ -1,1591 +1,653 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>06191CF4178BEB1200BF1FDF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AccountLog3.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06191CF5178BEB1200BF1FDF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AccountLog3.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06191CF6178BEB1200BF1FDF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06191CF5178BEB1200BF1FDF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06191CF7178BEB2C00BF1FDF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BankAccountLogDAO3.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06191CF8178BEB2C00BF1FDF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BankAccountLogDAO3.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06191CF9178BEB2C00BF1FDF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06191CF8178BEB2C00BF1FDF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0668029E176852B000AE0E57</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0668029F1768533D00AE0E57</string>
-				<string>066802A01768533D00AE0E57</string>
-				<string>066802A21768535B00AE0E57</string>
-				<string>066802A31768535B00AE0E57</string>
-				<string>06CF10FD1771925E0036EA36</string>
-				<string>06CF10FE1771925E0036EA36</string>
-				<string>06D1268A1774373A004088C9</string>
-				<string>06D1268B1774373A004088C9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>DataAccess</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0668029F1768533D00AE0E57</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Account.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>066802A01768533D00AE0E57</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Account.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>066802A11768533D00AE0E57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>066802A01768533D00AE0E57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>066802A21768535B00AE0E57</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BankAccountDAO.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>066802A31768535B00AE0E57</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BankAccountDAO.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>066802A41768535B00AE0E57</key>
-		<dict>
-			<key>fileRef</key>
-			<string>066802A31768535B00AE0E57</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06839EA1176701F600DAAEDA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06D5A3421786A54300268251</string>
-				<string>06C54C63177D69E60087A488</string>
-				<string>06839EAF176701F600DAAEDA</string>
-				<string>06839EC4176701F700DAAEDA</string>
-				<string>06839EC5176701F700DAAEDA</string>
-				<string>06839EAC176701F600DAAEDA</string>
-				<string>06839EAB176701F600DAAEDA</string>
-				<string>32A769F2F55949938B49E9A8</string>
-				<string>84F3BFE9425C4616848B7B59</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06839EA2176701F600DAAEDA</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0460</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Qsoft</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>06839EA5176701F600DAAEDA</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>06839EA1176701F600DAAEDA</string>
-			<key>productRefGroup</key>
-			<string>06839EAB176701F600DAAEDA</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>06839EA9176701F600DAAEDA</string>
-				<string>06839EBA176701F700DAAEDA</string>
-			</array>
-		</dict>
-		<key>06839EA5176701F600DAAEDA</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>06839ECD176701F700DAAEDA</string>
-				<string>06839ECE176701F700DAAEDA</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>06839EA6176701F600DAAEDA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>06839EB5176701F600DAAEDA</string>
-				<string>066802A11768533D00AE0E57</string>
-				<string>066802A41768535B00AE0E57</string>
-				<string>06CF10FF1771925E0036EA36</string>
-				<string>06D1268C1774373A004088C9</string>
-				<string>06C4D8F01782B48500B36155</string>
-				<string>06FB8C301783FE3700C947D0</string>
-				<string>06191CF6178BEB1200BF1FDF</string>
-				<string>06191CF9178BEB2C00BF1FDF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>06839EA7176701F600DAAEDA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>06839EAE176701F600DAAEDA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>06839EA8176701F600DAAEDA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string>include/${PRODUCT_NAME}</string>
-			<key>dstSubfolderSpec</key>
-			<string>16</string>
-			<key>files</key>
-			<array>
-				<string>06839EB3176701F600DAAEDA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>06839EA9176701F600DAAEDA</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>06839ECF176701F700DAAEDA</string>
-			<key>buildPhases</key>
-			<array>
-				<string>06839EA6176701F600DAAEDA</string>
-				<string>06839EA7176701F600DAAEDA</string>
-				<string>06839EA8176701F600DAAEDA</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>BankAccount</string>
-			<key>productName</key>
-			<string>BankAccount</string>
-			<key>productReference</key>
-			<string>06839EAA176701F600DAAEDA</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>06839EAA176701F600DAAEDA</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libBankAccount.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>06839EAB176701F600DAAEDA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06839EAA176701F600DAAEDA</string>
-				<string>06839EBB176701F700DAAEDA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06839EAC176701F600DAAEDA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06839EAD176701F600DAAEDA</string>
-				<string>06839EBC176701F700DAAEDA</string>
-				<string>E183FAE0043A4B6298FCD571</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06839EAD176701F600DAAEDA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>06839EAE176701F600DAAEDA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06839EAD176701F600DAAEDA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06839EAF176701F600DAAEDA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0668029E176852B000AE0E57</string>
-				<string>06839EB2176701F600DAAEDA</string>
-				<string>06839EB4176701F600DAAEDA</string>
-				<string>06839EB0176701F600DAAEDA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BankAccount</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06839EB0176701F600DAAEDA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06839EB1176701F600DAAEDA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06839EB1176701F600DAAEDA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BankAccount-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06839EB2176701F600DAAEDA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BankAccount.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06839EB3176701F600DAAEDA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06839EB2176701F600DAAEDA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06839EB4176701F600DAAEDA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BankAccount.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06839EB5176701F600DAAEDA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06839EB4176701F600DAAEDA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06839EB6176701F700DAAEDA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>06839ECC176701F700DAAEDA</string>
-				<string>06C54C62177D69070087A488</string>
-				<string>06C54C67177D6AB80087A488</string>
-				<string>06C54C6C177D6AFE0087A488</string>
-				<string>06C54C6F177D6B260087A488</string>
-				<string>06D5A3451786A55C00268251</string>
-				<string>06D5A3481786A5CA00268251</string>
-				<string>06D5A34E1786A61900268251</string>
-				<string>06D5A3511786A63400268251</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>06839EB7176701F700DAAEDA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>06839EBD176701F700DAAEDA</string>
-				<string>06839EC0176701F700DAAEDA</string>
-				<string>06839EC3176701F700DAAEDA</string>
-				<string>4FCAD07590864C869A720AB5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>06839EB8176701F700DAAEDA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>06839EC9176701F700DAAEDA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>06839EB9176701F700DAAEDA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string># Run the unit tests in this test bundle.
-"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests"
-</string>
-		</dict>
-		<key>06839EBA176701F700DAAEDA</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>06839ED2176701F700DAAEDA</string>
-			<key>buildPhases</key>
-			<array>
-				<string>11AD90CAC7C94EA193E7B343</string>
-				<string>6102E889E8604437BC0B20EF</string>
-				<string>06839EB6176701F700DAAEDA</string>
-				<string>06839EB7176701F700DAAEDA</string>
-				<string>06839EB8176701F700DAAEDA</string>
-				<string>06839EB9176701F700DAAEDA</string>
-				<string>AC5E85C11D7644C48919E884</string>
-				<string>646F24D835B74E7B8DBAE943</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>06839EC2176701F700DAAEDA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>BankAccountTests</string>
-			<key>productName</key>
-			<string>BankAccountTests</string>
-			<key>productReference</key>
-			<string>06839EBB176701F700DAAEDA</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>06839EBB176701F700DAAEDA</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>BankAccountTests.octest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>06839EBC176701F700DAAEDA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>SenTestingKit.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/SenTestingKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>06839EBD176701F700DAAEDA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06839EBC176701F700DAAEDA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06839EC0176701F700DAAEDA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06839EAD176701F600DAAEDA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06839EC1176701F700DAAEDA</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>06839EA2176701F600DAAEDA</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>06839EA9176701F600DAAEDA</string>
-			<key>remoteInfo</key>
-			<string>BankAccount</string>
-		</dict>
-		<key>06839EC2176701F700DAAEDA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>06839EA9176701F600DAAEDA</string>
-			<key>targetProxy</key>
-			<string>06839EC1176701F700DAAEDA</string>
-		</dict>
-		<key>06839EC3176701F700DAAEDA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06839EAA176701F600DAAEDA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06839EC4176701F700DAAEDA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06839ECB176701F700DAAEDA</string>
-				<string>06C54C61177D69070087A488</string>
-				<string>06D5A3441786A55C00268251</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BankAccountTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06839EC5176701F700DAAEDA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06839EC6176701F700DAAEDA</string>
-				<string>06839EC7176701F700DAAEDA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>path</key>
-			<string>BankAccountTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06839EC6176701F700DAAEDA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>BankAccountTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06839EC7176701F700DAAEDA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06839EC8176701F700DAAEDA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06839EC8176701F700DAAEDA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06839EC9176701F700DAAEDA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06839EC7176701F700DAAEDA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06839ECB176701F700DAAEDA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BankAccountTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06839ECC176701F700DAAEDA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06839ECB176701F700DAAEDA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06839ECD176701F700DAAEDA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>06839ECE176701F700DAAEDA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>06839ECF176701F700DAAEDA</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>06839ED0176701F700DAAEDA</string>
-				<string>06839ED1176701F700DAAEDA</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>06839ED0176701F700DAAEDA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/BankAccount.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BankAccount/BankAccount-Prefix.pch</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>06839ED1176701F700DAAEDA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/BankAccount.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BankAccount/BankAccount-Prefix.pch</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>06839ED2176701F700DAAEDA</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>06839ED3176701F700DAAEDA</string>
-				<string>06839ED4176701F700DAAEDA</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>06839ED3176701F700DAAEDA</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>84F3BFE9425C4616848B7B59</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
-					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BankAccount/BankAccount-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BankAccountTests/BankAccountTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>octest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>06839ED4176701F700DAAEDA</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>84F3BFE9425C4616848B7B59</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
-					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>BankAccount/BankAccount-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BankAccountTests/BankAccountTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>octest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>06C4D8EE1782B48500B36155</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AccountLog2.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06C4D8EF1782B48500B36155</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AccountLog2.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06C4D8F01782B48500B36155</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06C4D8EF1782B48500B36155</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06C54C61177D69070087A488</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BankAccountTestsSecond.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06C54C62177D69070087A488</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06C54C61177D69070087A488</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06C54C63177D69E60087A488</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06C54C64177D6A770087A488</string>
-				<string>06C54C65177D6AB80087A488</string>
-				<string>06C54C66177D6AB80087A488</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BankAccountSecond</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06C54C64177D6A770087A488</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06C54C69177D6ADB0087A488</string>
-				<string>06C54C68177D6AD40087A488</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>DataAccess</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06C54C65177D6AB80087A488</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BankAccount2.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06C54C66177D6AB80087A488</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BankAccount2.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06C54C67177D6AB80087A488</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06C54C66177D6AB80087A488</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06C54C68177D6AD40087A488</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06C54C6D177D6B260087A488</string>
-				<string>06C54C6E177D6B260087A488</string>
-				<string>06FB8C2E1783FE3700C947D0</string>
-				<string>06FB8C2F1783FE3700C947D0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>DAO</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06C54C69177D6ADB0087A488</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06C54C6A177D6AFE0087A488</string>
-				<string>06C54C6B177D6AFE0087A488</string>
-				<string>06C4D8EE1782B48500B36155</string>
-				<string>06C4D8EF1782B48500B36155</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Entities</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06C54C6A177D6AFE0087A488</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Account2.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06C54C6B177D6AFE0087A488</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Account2.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06C54C6C177D6AFE0087A488</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06C54C6B177D6AFE0087A488</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06C54C6D177D6B260087A488</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BankAccountDAO2.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06C54C6E177D6B260087A488</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BankAccountDAO2.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06C54C6F177D6B260087A488</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06C54C6E177D6B260087A488</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06CF10FD1771925E0036EA36</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AccountLog.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06CF10FE1771925E0036EA36</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AccountLog.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06CF10FF1771925E0036EA36</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06CF10FE1771925E0036EA36</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06D1268A1774373A004088C9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AccountLogDAO.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06D1268B1774373A004088C9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AccountLogDAO.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06D1268C1774373A004088C9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06D1268B1774373A004088C9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06D5A3421786A54300268251</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06D5A3491786A5D400268251</string>
-				<string>06D5A3461786A5CA00268251</string>
-				<string>06D5A3471786A5CA00268251</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BankAccountThird</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06D5A3441786A55C00268251</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BankAccountTestThird.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06D5A3451786A55C00268251</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06D5A3441786A55C00268251</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06D5A3461786A5CA00268251</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BankAccount3.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06D5A3471786A5CA00268251</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BankAccount3.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06D5A3481786A5CA00268251</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06D5A3471786A5CA00268251</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06D5A3491786A5D400268251</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06D5A34B1786A5EE00268251</string>
-				<string>06D5A34A1786A5E400268251</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>DataAccess</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06D5A34A1786A5E400268251</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06D5A34C1786A61900268251</string>
-				<string>06D5A34D1786A61900268251</string>
-				<string>06191CF4178BEB1200BF1FDF</string>
-				<string>06191CF5178BEB1200BF1FDF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Entities</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06D5A34B1786A5EE00268251</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>06D5A34F1786A63400268251</string>
-				<string>06D5A3501786A63400268251</string>
-				<string>06191CF7178BEB2C00BF1FDF</string>
-				<string>06191CF8178BEB2C00BF1FDF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>DAO</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06D5A34C1786A61900268251</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Account3.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06D5A34D1786A61900268251</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Account3.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06D5A34E1786A61900268251</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06D5A34D1786A61900268251</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06D5A34F1786A63400268251</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BankAccountDAO3.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06D5A3501786A63400268251</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BankAccountDAO3.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06D5A3511786A63400268251</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06D5A3501786A63400268251</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06FB8C2E1783FE3700C947D0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BankAccountLogDAO2.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06FB8C2F1783FE3700C947D0</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BankAccountLogDAO2.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06FB8C301783FE3700C947D0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>06FB8C2F1783FE3700C947D0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>11AD90CAC7C94EA193E7B343</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>1</string>
-		</dict>
-		<key>32A769F2F55949938B49E9A8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-BankAccountTests.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods-BankAccountTests.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4FCAD07590864C869A720AB5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E183FAE0043A4B6298FCD571</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>6102E889E8604437BC0B20EF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-		</dict>
-		<key>646F24D835B74E7B8DBAE943</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-BankAccountTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>1</string>
-		</dict>
-		<key>84F3BFE9425C4616848B7B59</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-BankAccountTests.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods-BankAccountTests.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>AC5E85C11D7644C48919E884</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-BankAccountTests-resources.sh"
-</string>
-		</dict>
-		<key>E183FAE0043A4B6298FCD571</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-BankAccountTests.a</string>
-			<key>path</key>
-			<string>libPods-BankAccountTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>06839EA2176701F600DAAEDA</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0603C06A178D394800921267 /* BankAccount3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0603C069178D394800921267 /* BankAccount3.m */; };
+		0603C06D178D396500921267 /* BankAccountLogDAO3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0603C06C178D396500921267 /* BankAccountLogDAO3.m */; };
+		06191CF6178BEB1200BF1FDF /* AccountLog3.m in Sources */ = {isa = PBXBuildFile; fileRef = 06191CF5178BEB1200BF1FDF /* AccountLog3.m */; };
+		066802A11768533D00AE0E57 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 066802A01768533D00AE0E57 /* Account.m */; };
+		066802A41768535B00AE0E57 /* BankAccountDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 066802A31768535B00AE0E57 /* BankAccountDAO.m */; };
+		06839EAE176701F600DAAEDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06839EAD176701F600DAAEDA /* Foundation.framework */; };
+		06839EB3176701F600DAAEDA /* BankAccount.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 06839EB2176701F600DAAEDA /* BankAccount.h */; };
+		06839EB5176701F600DAAEDA /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 06839EB4176701F600DAAEDA /* BankAccount.m */; };
+		06839EBD176701F700DAAEDA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06839EBC176701F700DAAEDA /* SenTestingKit.framework */; };
+		06839EC0176701F700DAAEDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06839EAD176701F600DAAEDA /* Foundation.framework */; };
+		06839EC3176701F700DAAEDA /* libBankAccount.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06839EAA176701F600DAAEDA /* libBankAccount.a */; };
+		06839EC9176701F700DAAEDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06839EC7176701F700DAAEDA /* InfoPlist.strings */; };
+		06839ECC176701F700DAAEDA /* BankAccountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06839ECB176701F700DAAEDA /* BankAccountTests.m */; };
+		06C4D8F01782B48500B36155 /* AccountLog2.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C4D8EF1782B48500B36155 /* AccountLog2.m */; };
+		06C54C62177D69070087A488 /* BankAccountTestsSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C54C61177D69070087A488 /* BankAccountTestsSecond.m */; };
+		06C54C67177D6AB80087A488 /* BankAccount2.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C54C66177D6AB80087A488 /* BankAccount2.m */; };
+		06C54C6C177D6AFE0087A488 /* Account2.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C54C6B177D6AFE0087A488 /* Account2.m */; };
+		06C54C6F177D6B260087A488 /* BankAccountDAO2.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C54C6E177D6B260087A488 /* BankAccountDAO2.m */; };
+		06CF10FF1771925E0036EA36 /* AccountLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CF10FE1771925E0036EA36 /* AccountLog.m */; };
+		06D1268C1774373A004088C9 /* AccountLogDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D1268B1774373A004088C9 /* AccountLogDAO.m */; };
+		06D5A3451786A55C00268251 /* BankAccountTestThird.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D5A3441786A55C00268251 /* BankAccountTestThird.m */; };
+		06D5A34E1786A61900268251 /* Account3.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D5A34D1786A61900268251 /* Account3.m */; };
+		06D5A3511786A63400268251 /* BankAccountDAO3.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D5A3501786A63400268251 /* BankAccountDAO3.m */; };
+		06FB8C301783FE3700C947D0 /* BankAccountLogDAO2.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FB8C2F1783FE3700C947D0 /* BankAccountLogDAO2.m */; };
+		4FCAD07590864C869A720AB5 /* libPods-BankAccountTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E183FAE0043A4B6298FCD571 /* libPods-BankAccountTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06839EC1176701F700DAAEDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06839EA2176701F600DAAEDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06839EA9176701F600DAAEDA;
+			remoteInfo = BankAccount;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		06839EA8176701F600DAAEDA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				06839EB3176701F600DAAEDA /* BankAccount.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0603C068178D394800921267 /* BankAccount3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccount3.h; sourceTree = "<group>"; };
+		0603C069178D394800921267 /* BankAccount3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount3.m; sourceTree = "<group>"; };
+		0603C06B178D396500921267 /* BankAccountLogDAO3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountLogDAO3.h; sourceTree = "<group>"; };
+		0603C06C178D396500921267 /* BankAccountLogDAO3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountLogDAO3.m; sourceTree = "<group>"; };
+		06191CF4178BEB1200BF1FDF /* AccountLog3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLog3.h; sourceTree = "<group>"; };
+		06191CF5178BEB1200BF1FDF /* AccountLog3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLog3.m; sourceTree = "<group>"; };
+		0668029F1768533D00AE0E57 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		066802A01768533D00AE0E57 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		066802A21768535B00AE0E57 /* BankAccountDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountDAO.h; sourceTree = "<group>"; };
+		066802A31768535B00AE0E57 /* BankAccountDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountDAO.m; sourceTree = "<group>"; };
+		06839EAA176701F600DAAEDA /* libBankAccount.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBankAccount.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		06839EAD176701F600DAAEDA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		06839EB1176701F600DAAEDA /* BankAccount-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BankAccount-Prefix.pch"; sourceTree = "<group>"; };
+		06839EB2176701F600DAAEDA /* BankAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankAccount.h; sourceTree = "<group>"; };
+		06839EB4176701F600DAAEDA /* BankAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAccount.m; sourceTree = "<group>"; };
+		06839EBB176701F700DAAEDA /* BankAccountTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankAccountTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06839EBC176701F700DAAEDA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		06839EC6176701F700DAAEDA /* BankAccountTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BankAccountTests-Info.plist"; sourceTree = "<group>"; };
+		06839EC8176701F700DAAEDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06839ECB176701F700DAAEDA /* BankAccountTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAccountTests.m; sourceTree = "<group>"; };
+		06C4D8EE1782B48500B36155 /* AccountLog2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLog2.h; sourceTree = "<group>"; };
+		06C4D8EF1782B48500B36155 /* AccountLog2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLog2.m; sourceTree = "<group>"; };
+		06C54C61177D69070087A488 /* BankAccountTestsSecond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountTestsSecond.m; sourceTree = "<group>"; };
+		06C54C65177D6AB80087A488 /* BankAccount2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccount2.h; sourceTree = "<group>"; };
+		06C54C66177D6AB80087A488 /* BankAccount2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount2.m; sourceTree = "<group>"; };
+		06C54C6A177D6AFE0087A488 /* Account2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account2.h; sourceTree = "<group>"; };
+		06C54C6B177D6AFE0087A488 /* Account2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account2.m; sourceTree = "<group>"; };
+		06C54C6D177D6B260087A488 /* BankAccountDAO2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountDAO2.h; sourceTree = "<group>"; };
+		06C54C6E177D6B260087A488 /* BankAccountDAO2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountDAO2.m; sourceTree = "<group>"; };
+		06CF10FD1771925E0036EA36 /* AccountLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLog.h; sourceTree = "<group>"; };
+		06CF10FE1771925E0036EA36 /* AccountLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLog.m; sourceTree = "<group>"; };
+		06D1268A1774373A004088C9 /* AccountLogDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLogDAO.h; sourceTree = "<group>"; };
+		06D1268B1774373A004088C9 /* AccountLogDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLogDAO.m; sourceTree = "<group>"; };
+		06D5A3441786A55C00268251 /* BankAccountTestThird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountTestThird.m; sourceTree = "<group>"; };
+		06D5A34C1786A61900268251 /* Account3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account3.h; sourceTree = "<group>"; };
+		06D5A34D1786A61900268251 /* Account3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account3.m; sourceTree = "<group>"; };
+		06D5A34F1786A63400268251 /* BankAccountDAO3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountDAO3.h; sourceTree = "<group>"; };
+		06D5A3501786A63400268251 /* BankAccountDAO3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountDAO3.m; sourceTree = "<group>"; };
+		06FB8C2E1783FE3700C947D0 /* BankAccountLogDAO2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountLogDAO2.h; sourceTree = "<group>"; };
+		06FB8C2F1783FE3700C947D0 /* BankAccountLogDAO2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountLogDAO2.m; sourceTree = "<group>"; };
+		32A769F2F55949938B49E9A8 /* Pods-BankAccountTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAccountTests.xcconfig"; path = "Pods/Pods-BankAccountTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		84F3BFE9425C4616848B7B59 /* Pods-BankAccountTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAccountTests.xcconfig"; path = "Pods/Pods-BankAccountTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		E183FAE0043A4B6298FCD571 /* libPods-BankAccountTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BankAccountTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06839EA7176701F600DAAEDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06839EAE176701F600DAAEDA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06839EB7176701F700DAAEDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06839EBD176701F700DAAEDA /* SenTestingKit.framework in Frameworks */,
+				06839EC0176701F700DAAEDA /* Foundation.framework in Frameworks */,
+				06839EC3176701F700DAAEDA /* libBankAccount.a in Frameworks */,
+				4FCAD07590864C869A720AB5 /* libPods-BankAccountTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0668029E176852B000AE0E57 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				0668029F1768533D00AE0E57 /* Account.h */,
+				066802A01768533D00AE0E57 /* Account.m */,
+				066802A21768535B00AE0E57 /* BankAccountDAO.h */,
+				066802A31768535B00AE0E57 /* BankAccountDAO.m */,
+				06CF10FD1771925E0036EA36 /* AccountLog.h */,
+				06CF10FE1771925E0036EA36 /* AccountLog.m */,
+				06D1268A1774373A004088C9 /* AccountLogDAO.h */,
+				06D1268B1774373A004088C9 /* AccountLogDAO.m */,
+			);
+			name = DataAccess;
+			sourceTree = "<group>";
+		};
+		06839EA1176701F600DAAEDA = {
+			isa = PBXGroup;
+			children = (
+				06D5A3421786A54300268251 /* BankAccountThird */,
+				06C54C63177D69E60087A488 /* BankAccountSecond */,
+				06839EAF176701F600DAAEDA /* BankAccount */,
+				06839EC4176701F700DAAEDA /* BankAccountTests */,
+				06839EC5176701F700DAAEDA /* Supporting Files */,
+				06839EAC176701F600DAAEDA /* Frameworks */,
+				06839EAB176701F600DAAEDA /* Products */,
+				32A769F2F55949938B49E9A8 /* Pods-BankAccountTests.xcconfig */,
+				84F3BFE9425C4616848B7B59 /* Pods-BankAccountTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		06839EAB176701F600DAAEDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06839EAA176701F600DAAEDA /* libBankAccount.a */,
+				06839EBB176701F700DAAEDA /* BankAccountTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06839EAC176701F600DAAEDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06839EAD176701F600DAAEDA /* Foundation.framework */,
+				06839EBC176701F700DAAEDA /* SenTestingKit.framework */,
+				E183FAE0043A4B6298FCD571 /* libPods-BankAccountTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06839EAF176701F600DAAEDA /* BankAccount */ = {
+			isa = PBXGroup;
+			children = (
+				0668029E176852B000AE0E57 /* DataAccess */,
+				06839EB2176701F600DAAEDA /* BankAccount.h */,
+				06839EB4176701F600DAAEDA /* BankAccount.m */,
+				06839EB0176701F600DAAEDA /* Supporting Files */,
+			);
+			path = BankAccount;
+			sourceTree = "<group>";
+		};
+		06839EB0176701F600DAAEDA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06839EB1176701F600DAAEDA /* BankAccount-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06839EC4176701F700DAAEDA /* BankAccountTests */ = {
+			isa = PBXGroup;
+			children = (
+				06839ECB176701F700DAAEDA /* BankAccountTests.m */,
+				06C54C61177D69070087A488 /* BankAccountTestsSecond.m */,
+				06D5A3441786A55C00268251 /* BankAccountTestThird.m */,
+			);
+			path = BankAccountTests;
+			sourceTree = "<group>";
+		};
+		06839EC5176701F700DAAEDA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06839EC6176701F700DAAEDA /* BankAccountTests-Info.plist */,
+				06839EC7176701F700DAAEDA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			path = BankAccountTests;
+			sourceTree = "<group>";
+		};
+		06C54C63177D69E60087A488 /* BankAccountSecond */ = {
+			isa = PBXGroup;
+			children = (
+				06C54C64177D6A770087A488 /* DataAccess */,
+				06C54C65177D6AB80087A488 /* BankAccount2.h */,
+				06C54C66177D6AB80087A488 /* BankAccount2.m */,
+			);
+			path = BankAccountSecond;
+			sourceTree = "<group>";
+		};
+		06C54C64177D6A770087A488 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				06C54C69177D6ADB0087A488 /* Entities */,
+				06C54C68177D6AD40087A488 /* DAO */,
+			);
+			name = DataAccess;
+			sourceTree = "<group>";
+		};
+		06C54C68177D6AD40087A488 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				06C54C6D177D6B260087A488 /* BankAccountDAO2.h */,
+				06C54C6E177D6B260087A488 /* BankAccountDAO2.m */,
+				06FB8C2E1783FE3700C947D0 /* BankAccountLogDAO2.h */,
+				06FB8C2F1783FE3700C947D0 /* BankAccountLogDAO2.m */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		06C54C69177D6ADB0087A488 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				06C54C6A177D6AFE0087A488 /* Account2.h */,
+				06C54C6B177D6AFE0087A488 /* Account2.m */,
+				06C4D8EE1782B48500B36155 /* AccountLog2.h */,
+				06C4D8EF1782B48500B36155 /* AccountLog2.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		06D5A3421786A54300268251 /* BankAccountThird */ = {
+			isa = PBXGroup;
+			children = (
+				0603C068178D394800921267 /* BankAccount3.h */,
+				0603C069178D394800921267 /* BankAccount3.m */,
+				06D5A3491786A5D400268251 /* DataAccess */,
+			);
+			path = BankAccountThird;
+			sourceTree = "<group>";
+		};
+		06D5A3491786A5D400268251 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				06D5A34B1786A5EE00268251 /* DAO */,
+				06D5A34A1786A5E400268251 /* Entities */,
+			);
+			name = DataAccess;
+			sourceTree = "<group>";
+		};
+		06D5A34A1786A5E400268251 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				06D5A34C1786A61900268251 /* Account3.h */,
+				06D5A34D1786A61900268251 /* Account3.m */,
+				06191CF4178BEB1200BF1FDF /* AccountLog3.h */,
+				06191CF5178BEB1200BF1FDF /* AccountLog3.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		06D5A34B1786A5EE00268251 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				0603C06B178D396500921267 /* BankAccountLogDAO3.h */,
+				0603C06C178D396500921267 /* BankAccountLogDAO3.m */,
+				06D5A34F1786A63400268251 /* BankAccountDAO3.h */,
+				06D5A3501786A63400268251 /* BankAccountDAO3.m */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06839EA9176701F600DAAEDA /* BankAccount */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06839ECF176701F700DAAEDA /* Build configuration list for PBXNativeTarget "BankAccount" */;
+			buildPhases = (
+				06839EA6176701F600DAAEDA /* Sources */,
+				06839EA7176701F600DAAEDA /* Frameworks */,
+				06839EA8176701F600DAAEDA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankAccount;
+			productName = BankAccount;
+			productReference = 06839EAA176701F600DAAEDA /* libBankAccount.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		06839EBA176701F700DAAEDA /* BankAccountTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06839ED2176701F700DAAEDA /* Build configuration list for PBXNativeTarget "BankAccountTests" */;
+			buildPhases = (
+				11AD90CAC7C94EA193E7B343 /* Check Pods Manifest.lock */,
+				6102E889E8604437BC0B20EF /* Check Pods Manifest.lock */,
+				06839EB6176701F700DAAEDA /* Sources */,
+				06839EB7176701F700DAAEDA /* Frameworks */,
+				06839EB8176701F700DAAEDA /* Resources */,
+				06839EB9176701F700DAAEDA /* ShellScript */,
+				AC5E85C11D7644C48919E884 /* Copy Pods Resources */,
+				646F24D835B74E7B8DBAE943 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06839EC2176701F700DAAEDA /* PBXTargetDependency */,
+			);
+			name = BankAccountTests;
+			productName = BankAccountTests;
+			productReference = 06839EBB176701F700DAAEDA /* BankAccountTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06839EA2176701F600DAAEDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Qsoft;
+			};
+			buildConfigurationList = 06839EA5176701F600DAAEDA /* Build configuration list for PBXProject "BankAccount" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 06839EA1176701F600DAAEDA;
+			productRefGroup = 06839EAB176701F600DAAEDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06839EA9176701F600DAAEDA /* BankAccount */,
+				06839EBA176701F700DAAEDA /* BankAccountTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06839EB8176701F700DAAEDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06839EC9176701F700DAAEDA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06839EB9176701F700DAAEDA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		11AD90CAC7C94EA193E7B343 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		6102E889E8604437BC0B20EF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		646F24D835B74E7B8DBAE943 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-BankAccountTests-resources.sh\"\n";
+		};
+		AC5E85C11D7644C48919E884 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-BankAccountTests-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06839EA6176701F600DAAEDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06839EB5176701F600DAAEDA /* BankAccount.m in Sources */,
+				066802A11768533D00AE0E57 /* Account.m in Sources */,
+				066802A41768535B00AE0E57 /* BankAccountDAO.m in Sources */,
+				06CF10FF1771925E0036EA36 /* AccountLog.m in Sources */,
+				06D1268C1774373A004088C9 /* AccountLogDAO.m in Sources */,
+				06C4D8F01782B48500B36155 /* AccountLog2.m in Sources */,
+				06FB8C301783FE3700C947D0 /* BankAccountLogDAO2.m in Sources */,
+				06191CF6178BEB1200BF1FDF /* AccountLog3.m in Sources */,
+				0603C06A178D394800921267 /* BankAccount3.m in Sources */,
+				0603C06D178D396500921267 /* BankAccountLogDAO3.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06839EB6176701F700DAAEDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06839ECC176701F700DAAEDA /* BankAccountTests.m in Sources */,
+				06C54C62177D69070087A488 /* BankAccountTestsSecond.m in Sources */,
+				06C54C67177D6AB80087A488 /* BankAccount2.m in Sources */,
+				06C54C6C177D6AFE0087A488 /* Account2.m in Sources */,
+				06C54C6F177D6B260087A488 /* BankAccountDAO2.m in Sources */,
+				06D5A3451786A55C00268251 /* BankAccountTestThird.m in Sources */,
+				06D5A34E1786A61900268251 /* Account3.m in Sources */,
+				06D5A3511786A63400268251 /* BankAccountDAO3.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06839EC2176701F700DAAEDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06839EA9176701F600DAAEDA /* BankAccount */;
+			targetProxy = 06839EC1176701F700DAAEDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06839EC7176701F700DAAEDA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06839EC8176701F700DAAEDA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06839ECD176701F700DAAEDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		06839ECE176701F700DAAEDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+		06839ED0176701F700DAAEDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BankAccount.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BankAccount/BankAccount-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		06839ED1176701F700DAAEDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BankAccount.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BankAccount/BankAccount-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+		06839ED3176701F700DAAEDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F3BFE9425C4616848B7B59 /* Pods-BankAccountTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BankAccount/BankAccount-Prefix.pch";
+				INFOPLIST_FILE = "BankAccountTests/BankAccountTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		06839ED4176701F700DAAEDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F3BFE9425C4616848B7B59 /* Pods-BankAccountTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BankAccount/BankAccount-Prefix.pch";
+				INFOPLIST_FILE = "BankAccountTests/BankAccountTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06839EA5176701F600DAAEDA /* Build configuration list for PBXProject "BankAccount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06839ECD176701F700DAAEDA /* Debug */,
+				06839ECE176701F700DAAEDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06839ECF176701F700DAAEDA /* Build configuration list for PBXNativeTarget "BankAccount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06839ED0176701F700DAAEDA /* Debug */,
+				06839ED1176701F700DAAEDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06839ED2176701F700DAAEDA /* Build configuration list for PBXNativeTarget "BankAccountTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06839ED3176701F700DAAEDA /* Debug */,
+				06839ED4176701F700DAAEDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06839EA2176701F600DAAEDA /* Project object */;
+}

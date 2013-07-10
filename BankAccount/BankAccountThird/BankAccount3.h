@@ -7,11 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Account3.h"
-#import "BankAccountDAO3.h"
-#import "AccountLog3.h"
-#import "BankAccountLogDAO3.m"
 
+@class BankAccountDAO3, BankAccountLogDAO3, AccountLog3, Account3;
 @interface BankAccount3 : NSObject
 
 @property(strong, nonatomic)BankAccountDAO3 *bankAccountDAO;

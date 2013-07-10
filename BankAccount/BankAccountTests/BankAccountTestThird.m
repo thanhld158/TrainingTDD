@@ -83,10 +83,20 @@ describe(@"Test bank account class", ^{
         it(@"4. Information of transaction when depositing will be saved into db", ^{
             NSNumber *amount = @(50);
             NSString *description = @"deposit";
+            NSDate *mockDate = [NSDate nullMock];
+            AccountLog3 *mockAccLog = [AccountLog3 nullMock];
             
-            [sut stub:@selector(createAccLogWithAccountNumber:amount:andDes:)];
+            [NSDate stub:@selector(date) andReturn:mockDate];
+            [[sut should] receive:@selector(createAccLogWithAccountNumber:amount:andDes:)];
+            [[bankAccountDAO should] receive:@selector(updateAccount:)];
+            [bankAccountDAO stub:@selector(updateAccount:) andReturn:theValue(YES)];
+            [sut stub:@selector(createAccLogWithAccountNumber:amount:andDes:) andReturn:mockAccLog];
             
+            KWCaptureSpy *spy = [bankAccountLogDAO captureArgument:@selector(insertAccountLogForTransaction:) atIndex:0];
             [sut deposit:mockAccountNumber amount:amount andDes:description];
+            
+            AccountLog3 *accLogSaved = spy.argument;
+            [[accLogSaved should] equal:mockAccLog];
         });
     });
 });

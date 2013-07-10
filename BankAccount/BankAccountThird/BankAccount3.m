@@ -7,6 +7,10 @@
 //
 
 #import "BankAccount3.h"
+#import "Account3.h"
+#import "BankAccountDAO3.h"
+#import "AccountLog3.h"
+#import "BankAccountLogDAO3.m"
 
 @implementation BankAccount3
 @synthesize bankAccountDAO;
