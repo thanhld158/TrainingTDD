@@ -98,6 +98,40 @@ describe(@"Test bank account class", ^{
             AccountLog3 *accLogSaved = spy.argument;
             [[accLogSaved should] equal:mockAccLog];
         });
+        
+        it(@"5. withdraw from bank account, result: balance decrease amount", ^{
+            NSNumber *amount = @(50);
+            NSString *description = @"withdraw";
+            Account3 *accountBefore = [Account3 nullMock];
+            
+            [bankAccountDAO stub:@selector(updateAccount:) andReturn:theValue(YES)];
+            [accountBefore stub:@selector(balance) andReturn:@(100)];
+            [sut stub:@selector(getAccount:) andReturn:accountBefore withArguments:mockAccountNumber];
+            
+            Account3 *accountAfterWithdraw = [sut withdraw:mockAccountNumber amount:amount andDes:description];
+            [[accountAfterWithdraw.balance should] equal:@(accountBefore.balance.doubleValue - amount.doubleValue)];
+        });
+        
+        it(@"6. Infomation of transaction when withdraw will be saved into db", ^{
+            NSNumber *amount = @(50);
+            NSString *description = @"withdraw";
+            
+            [bankAccountDAO stub:@selector(updateAccount:) andReturn:theValue(YES)];
+            [[sut should] receive:@selector(createAccLogWithAccountNumber:amount:andDes:)];
+            [[bankAccountLogDAO should] receive:@selector(insertAccountLogForTransaction:)];
+            
+            KWCaptureSpy *spy = [bankAccountLogDAO captureArgument:@selector(insertAccountLogForTransaction:) atIndex:0];
+            
+            [sut withdraw:mockAccountNumber amount:amount andDes:description];
+            AccountLog3 *accLog = spy.argument;
+            [[accLog.amount should] equal:@(-amount.doubleValue)];
+        });
+    });
+    
+    context(@"Operation with account log", ^{
+        it(@"7. Get all transaction log of an account", ^{
+            
+        });
     });
 });
 

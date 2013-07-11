@@ -16,6 +16,8 @@
 
 - (Account3 *)open:(NSString *)accountNumber;
 - (Account3 *)getAccount:(NSString *)accountNumber;
-- (Account3 *)deposit:(NSString *)accountNumber amount:(NSNumber *)amount andDes:(NSString *)des;
 - (AccountLog3 *)createAccLogWithAccountNumber:(NSString *)accNumber amount:(NSNumber *)amount andDes:(NSString *)des;
+- (Account3 *)deposit:(NSString *)accountNumber amount:(NSNumber *)amount andDes:(NSString *)des;
+- (Account3 *)withdraw:(NSString *)accountNumber amount:(NSNumber *)amount andDes:(NSString *)des;
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber;
 @end

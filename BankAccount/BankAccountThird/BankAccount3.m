@@ -57,4 +57,23 @@
     }
     return nil;
 }
+
+- (Account3 *)withdraw:(NSString *)accountNumber amount:(NSNumber *)amount andDes:(NSString *)des {
+    Account3 *accountBeforeWithdraw = [self getAccount:accountNumber];
+    Account3 *accountAfterWithdraw = [[Account3 alloc] init];
+    accountAfterWithdraw.accountNumber = accountNumber;
+    accountAfterWithdraw.openTimeStamp = accountBeforeWithdraw.openTimeStamp;
+    accountAfterWithdraw.balance = @(accountBeforeWithdraw.balance.doubleValue - amount.doubleValue);
+    if ([bankAccountDAO updateAccount:accountAfterWithdraw]) {
+        AccountLog3 *accLog = [self createAccLogWithAccountNumber:accountNumber amount:@(-amount.doubleValue) andDes:des];
+        [bankAccountLogDAO insertAccountLogForTransaction:accLog];
+        return accountAfterWithdraw;
+    }
+    return nil;
+}
+
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber {
+    NSArray *logTransactionList = [bankAccountLogDAO getTransactionsOccurredWithAccountNumber:accountNumber];
+    return logTransactionList;
+}
 @end

@@ -11,4 +11,5 @@
 
 @interface BankAccountLogDAO3 : NSObject
 - (BOOL)insertAccountLogForTransaction:(AccountLog3 *)accLog;
+- (NSArray *)getTransactionsOccurredWithAccountNumber:(NSString *)accountNumber;
 @end

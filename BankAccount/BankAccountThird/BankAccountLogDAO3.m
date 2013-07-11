@@ -13,4 +13,8 @@
 - (BOOL)insertAccountLogForTransaction:(AccountLog3 *)accLog {
     return NO;
 }
+
+- (NSArray *)getTransactionsOccurredWithAccountNumber:(NSString *)accountNumber {
+    return nil;
+}
 @end
