@@ -76,4 +76,14 @@
     NSArray *logTransactionList = [bankAccountLogDAO getTransactionsOccurredWithAccountNumber:accountNumber];
     return logTransactionList;
 }
+
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber startTime:(NSDate *)startTime andStopTime:(NSDate *)stopTime {
+    NSArray *logTransactionList = [bankAccountLogDAO getTransactionsOccurredWithAccountNumber:accountNumber startTime:startTime andStopTime:stopTime];
+    return logTransactionList;
+}
+
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber andNumberTransaction:(NSInteger )numberTransaction {
+    NSArray *logTransactionList = [bankAccountLogDAO getTransactionsOccurredWithAccountNumber:accountNumber andNumberTransaction:numberTransaction];
+    return logTransactionList;
+}
 @end

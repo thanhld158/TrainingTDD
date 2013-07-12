@@ -20,4 +20,6 @@
 - (Account3 *)deposit:(NSString *)accountNumber amount:(NSNumber *)amount andDes:(NSString *)des;
 - (Account3 *)withdraw:(NSString *)accountNumber amount:(NSNumber *)amount andDes:(NSString *)des;
 - (NSArray *)getTransactionsOccurred:(NSString *)accountNumber;
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber startTime:(NSDate *)startTime andStopTime:(NSDate *)stopTime;
+- (NSArray *)getTransactionsOccurred:(NSString *)accountNumber andNumberTransaction:(NSInteger )numberTransaction;
 @end

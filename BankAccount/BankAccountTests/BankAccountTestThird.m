@@ -130,7 +130,32 @@ describe(@"Test bank account class", ^{
     
     context(@"Operation with account log", ^{
         it(@"7. Get all transaction log of an account", ^{
+            // Check
+            [[bankAccountLogDAO should] receive:@selector(getTransactionsOccurredWithAccountNumber:) withArguments:mockAccountNumber];
             
+            KWCaptureSpy *spy = [bankAccountLogDAO captureArgument:@selector(getTransactionsOccurredWithAccountNumber:) atIndex:0];
+            
+            [sut getTransactionsOccurred:mockAccountNumber];
+            NSString *argument = spy.argument;
+            [[argument should] equal:mockAccountNumber];
+        });
+        
+        it(@"8. Get transaction list between startTime and stopTime", ^{
+            NSDate *startTime = [NSDate nullMock];
+            NSDate *stopTime = [NSDate nullMock];
+            
+            // Check
+            [[bankAccountLogDAO should] receive:@selector(getTransactionsOccurredWithAccountNumber:startTime:andStopTime:) withArguments:mockAccountNumber, startTime, stopTime];
+            [sut getTransactionsOccurred:mockAccountNumber startTime:startTime andStopTime:stopTime];
+        });
+        
+        it(@"9. Get transaction list with n newest transaction", ^{
+            NSInteger numberTransaction = 100;
+            
+            // Check
+            [[bankAccountLogDAO should] receive:@selector(getTransactionsOccurredWithAccountNumber:andNumberTransaction:) withArguments:mockAccountNumber, theValue(numberTransaction)];
+            
+            [sut getTransactionsOccurred:mockAccountNumber andNumberTransaction:numberTransaction];
         });
     });
 });
