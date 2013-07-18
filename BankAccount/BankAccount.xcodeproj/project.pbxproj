@@ -20,6 +20,9 @@
 		06839EC3176701F700DAAEDA /* libBankAccount.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06839EAA176701F600DAAEDA /* libBankAccount.a */; };
 		06839EC9176701F700DAAEDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06839EC7176701F700DAAEDA /* InfoPlist.strings */; };
 		06839ECC176701F700DAAEDA /* BankAccountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06839ECB176701F700DAAEDA /* BankAccountTests.m */; };
+		06ADAF131795253600FC179E /* BankAccountDAOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 06ADAF121795253600FC179E /* BankAccountDAOTest.m */; };
+		06ADAF161795254C00FC179E /* BankAccountLogDAOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 06ADAF151795254C00FC179E /* BankAccountLogDAOTest.m */; };
+		06ADAF1C1795264700FC179E /* LocalStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06ADAF1B1795264700FC179E /* LocalStorage.framework */; };
 		06C4D8F01782B48500B36155 /* AccountLog2.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C4D8EF1782B48500B36155 /* AccountLog2.m */; };
 		06C54C62177D69070087A488 /* BankAccountTestsSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C54C61177D69070087A488 /* BankAccountTestsSecond.m */; };
 		06C54C67177D6AB80087A488 /* BankAccount2.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C54C66177D6AB80087A488 /* BankAccount2.m */; };
@@ -78,6 +81,13 @@
 		06839EC6176701F700DAAEDA /* BankAccountTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BankAccountTests-Info.plist"; sourceTree = "<group>"; };
 		06839EC8176701F700DAAEDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		06839ECB176701F700DAAEDA /* BankAccountTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAccountTests.m; sourceTree = "<group>"; };
+		06ADAF121795253600FC179E /* BankAccountDAOTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountDAOTest.m; sourceTree = "<group>"; };
+		06ADAF151795254C00FC179E /* BankAccountLogDAOTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountLogDAOTest.m; sourceTree = "<group>"; };
+		06ADAF1B1795264700FC179E /* LocalStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LocalStorage.framework; sourceTree = "<group>"; };
+		06ADAF241795282600FC179E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		06ADAF271795282600FC179E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		06ADAF291795282600FC179E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		06ADAFAC1795288300FC179E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		06C4D8EE1782B48500B36155 /* AccountLog2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLog2.h; sourceTree = "<group>"; };
 		06C4D8EF1782B48500B36155 /* AccountLog2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLog2.m; sourceTree = "<group>"; };
 		06C54C61177D69070087A488 /* BankAccountTestsSecond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountTestsSecond.m; sourceTree = "<group>"; };
@@ -120,6 +130,7 @@
 				06839EC0176701F700DAAEDA /* Foundation.framework in Frameworks */,
 				06839EC3176701F700DAAEDA /* libBankAccount.a in Frameworks */,
 				4FCAD07590864C869A720AB5 /* libPods-BankAccountTests.a in Frameworks */,
+				06ADAF1C1795264700FC179E /* LocalStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,9 +179,14 @@
 		06839EAC176701F600DAAEDA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				06ADAFAC1795288300FC179E /* libsqlite3.dylib */,
+				06ADAF1B1795264700FC179E /* LocalStorage.framework */,
 				06839EAD176701F600DAAEDA /* Foundation.framework */,
 				06839EBC176701F700DAAEDA /* SenTestingKit.framework */,
 				E183FAE0043A4B6298FCD571 /* libPods-BankAccountTests.a */,
+				06ADAF241795282600FC179E /* UIKit.framework */,
+				06ADAF271795282600FC179E /* CoreGraphics.framework */,
+				06ADAF291795282600FC179E /* CoreData.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,9 +213,8 @@
 		06839EC4176701F700DAAEDA /* BankAccountTests */ = {
 			isa = PBXGroup;
 			children = (
-				06839ECB176701F700DAAEDA /* BankAccountTests.m */,
-				06C54C61177D69070087A488 /* BankAccountTestsSecond.m */,
-				06D5A3441786A55C00268251 /* BankAccountTestThird.m */,
+				06ADAF10179524E000FC179E /* DAO */,
+				06ADAF0F179524C800FC179E /* Business */,
 			);
 			path = BankAccountTests;
 			sourceTree = "<group>";
@@ -212,6 +227,25 @@
 			);
 			name = "Supporting Files";
 			path = BankAccountTests;
+			sourceTree = "<group>";
+		};
+		06ADAF0F179524C800FC179E /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				06839ECB176701F700DAAEDA /* BankAccountTests.m */,
+				06C54C61177D69070087A488 /* BankAccountTestsSecond.m */,
+				06D5A3441786A55C00268251 /* BankAccountTestThird.m */,
+			);
+			name = Business;
+			sourceTree = "<group>";
+		};
+		06ADAF10179524E000FC179E /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				06ADAF121795253600FC179E /* BankAccountDAOTest.m */,
+				06ADAF151795254C00FC179E /* BankAccountLogDAOTest.m */,
+			);
+			name = DAO;
 			sourceTree = "<group>";
 		};
 		06C54C63177D69E60087A488 /* BankAccountSecond */ = {
@@ -479,6 +513,8 @@
 				06D5A3451786A55C00268251 /* BankAccountTestThird.m in Sources */,
 				06D5A34E1786A61900268251 /* Account3.m in Sources */,
 				06D5A3511786A63400268251 /* BankAccountDAO3.m in Sources */,
+				06ADAF131795253600FC179E /* BankAccountDAOTest.m in Sources */,
+				06ADAF161795254C00FC179E /* BankAccountLogDAOTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,10 +626,16 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/Pods\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BankAccount/BankAccount-Prefix.pch";
 				INFOPLIST_FILE = "BankAccountTests/BankAccountTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = octest;
@@ -607,10 +649,16 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/Pods\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BankAccount/BankAccount-Prefix.pch";
 				INFOPLIST_FILE = "BankAccountTests/BankAccountTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = octest;

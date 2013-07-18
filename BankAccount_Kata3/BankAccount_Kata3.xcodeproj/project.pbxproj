@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		063FFE89179673BD00400AF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FFE88179673BD00400AF3 /* UIKit.framework */; };
+		063FFE8B179673BD00400AF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FFE8A179673BD00400AF3 /* Foundation.framework */; };
+		063FFE8D179673BD00400AF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FFE8C179673BD00400AF3 /* CoreGraphics.framework */; };
+		063FFE93179673BD00400AF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 063FFE91179673BD00400AF3 /* InfoPlist.strings */; };
+		063FFE95179673BD00400AF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFE94179673BD00400AF3 /* main.m */; };
+		063FFE99179673BE00400AF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFE98179673BE00400AF3 /* AppDelegate.m */; };
+		063FFE9B179673BE00400AF3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 063FFE9A179673BE00400AF3 /* Default.png */; };
+		063FFE9D179673BE00400AF3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 063FFE9C179673BE00400AF3 /* Default@2x.png */; };
+		063FFE9F179673BE00400AF3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 063FFE9E179673BE00400AF3 /* Default-568h@2x.png */; };
+		063FFEA2179673BE00400AF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFEA1179673BE00400AF3 /* ViewController.m */; };
+		063FFEA5179673BE00400AF3 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063FFEA3179673BE00400AF3 /* ViewController_iPhone.xib */; };
+		063FFEA8179673BE00400AF3 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063FFEA6179673BE00400AF3 /* ViewController_iPad.xib */; };
+		063FFEB0179673BF00400AF3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FFEAF179673BF00400AF3 /* SenTestingKit.framework */; };
+		063FFEB1179673BF00400AF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FFE88179673BD00400AF3 /* UIKit.framework */; };
+		063FFEB2179673BF00400AF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FFE8A179673BD00400AF3 /* Foundation.framework */; };
+		063FFEBA179673BF00400AF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 063FFEB8179673BF00400AF3 /* InfoPlist.strings */; };
+		063FFEBD179673BF00400AF3 /* BankAccount_Kata3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFEBC179673BF00400AF3 /* BankAccount_Kata3Tests.m */; };
+		063FFED3179675B800400AF3 /* Account3.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFED0179675B800400AF3 /* Account3.m */; };
+		063FFED4179675B800400AF3 /* AccountLog3.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFED2179675B800400AF3 /* AccountLog3.m */; };
+		063FFED9179675D900400AF3 /* BankAccountDAO3.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFED6179675D900400AF3 /* BankAccountDAO3.m */; };
+		063FFEDA179675D900400AF3 /* BankAccountLogDAO3.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFED8179675D900400AF3 /* BankAccountLogDAO3.m */; };
+		063FFEDD179675EB00400AF3 /* BankAccount3.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFEDC179675EB00400AF3 /* BankAccount3.m */; };
+		063FFEDF1796761300400AF3 /* LocalStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FFEDE1796761300400AF3 /* LocalStorage.framework */; };
+		73FB0C82F11144218B85AC95 /* libPods-BankAccount_Kata3Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F00AD75BAA9843998F074152 /* libPods-BankAccount_Kata3Tests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		063FFEB3179673BF00400AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 063FFE7D179673BD00400AF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 063FFE84179673BD00400AF3;
+			remoteInfo = BankAccount_Kata3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		063FFE85179673BD00400AF3 /* BankAccount_Kata3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankAccount_Kata3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		063FFE88179673BD00400AF3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		063FFE8A179673BD00400AF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		063FFE8C179673BD00400AF3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		063FFE90179673BD00400AF3 /* BankAccount_Kata3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BankAccount_Kata3-Info.plist"; sourceTree = "<group>"; };
+		063FFE92179673BD00400AF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		063FFE94179673BD00400AF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		063FFE96179673BD00400AF3 /* BankAccount_Kata3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BankAccount_Kata3-Prefix.pch"; sourceTree = "<group>"; };
+		063FFE97179673BD00400AF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		063FFE98179673BE00400AF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		063FFE9A179673BE00400AF3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		063FFE9C179673BE00400AF3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		063FFE9E179673BE00400AF3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		063FFEA0179673BE00400AF3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		063FFEA1179673BE00400AF3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		063FFEA4179673BE00400AF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		063FFEA7179673BE00400AF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		063FFEAE179673BF00400AF3 /* BankAccount_Kata3Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankAccount_Kata3Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		063FFEAF179673BF00400AF3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		063FFEB7179673BF00400AF3 /* BankAccount_Kata3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BankAccount_Kata3Tests-Info.plist"; sourceTree = "<group>"; };
+		063FFEB9179673BF00400AF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		063FFEBC179673BF00400AF3 /* BankAccount_Kata3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAccount_Kata3Tests.m; sourceTree = "<group>"; };
+		063FFECF179675B800400AF3 /* Account3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account3.h; sourceTree = "<group>"; };
+		063FFED0179675B800400AF3 /* Account3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account3.m; sourceTree = "<group>"; };
+		063FFED1179675B800400AF3 /* AccountLog3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLog3.h; sourceTree = "<group>"; };
+		063FFED2179675B800400AF3 /* AccountLog3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLog3.m; sourceTree = "<group>"; };
+		063FFED5179675D900400AF3 /* BankAccountDAO3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountDAO3.h; sourceTree = "<group>"; };
+		063FFED6179675D900400AF3 /* BankAccountDAO3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountDAO3.m; sourceTree = "<group>"; };
+		063FFED7179675D900400AF3 /* BankAccountLogDAO3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountLogDAO3.h; sourceTree = "<group>"; };
+		063FFED8179675D900400AF3 /* BankAccountLogDAO3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountLogDAO3.m; sourceTree = "<group>"; };
+		063FFEDB179675EB00400AF3 /* BankAccount3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccount3.h; sourceTree = "<group>"; };
+		063FFEDC179675EB00400AF3 /* BankAccount3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount3.m; sourceTree = "<group>"; };
+		063FFEDE1796761300400AF3 /* LocalStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LocalStorage.framework; sourceTree = "<group>"; };
+		DB0531B59A704DFB8B1911AA /* Pods-BankAccount_Kata3Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAccount_Kata3Tests.xcconfig"; path = "Pods/Pods-BankAccount_Kata3Tests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		F00AD75BAA9843998F074152 /* libPods-BankAccount_Kata3Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BankAccount_Kata3Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		063FFE82179673BD00400AF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063FFE89179673BD00400AF3 /* UIKit.framework in Frameworks */,
+				063FFE8B179673BD00400AF3 /* Foundation.framework in Frameworks */,
+				063FFE8D179673BD00400AF3 /* CoreGraphics.framework in Frameworks */,
+				063FFEDF1796761300400AF3 /* LocalStorage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		063FFEAA179673BF00400AF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063FFEB0179673BF00400AF3 /* SenTestingKit.framework in Frameworks */,
+				063FFEB1179673BF00400AF3 /* UIKit.framework in Frameworks */,
+				063FFEB2179673BF00400AF3 /* Foundation.framework in Frameworks */,
+				73FB0C82F11144218B85AC95 /* libPods-BankAccount_Kata3Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		063FFE7C179673BD00400AF3 = {
+			isa = PBXGroup;
+			children = (
+				063FFE8E179673BD00400AF3 /* BankAccount_Kata3 */,
+				063FFEB5179673BF00400AF3 /* BankAccount_Kata3Tests */,
+				063FFE87179673BD00400AF3 /* Frameworks */,
+				063FFE86179673BD00400AF3 /* Products */,
+				DB0531B59A704DFB8B1911AA /* Pods-BankAccount_Kata3Tests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		063FFE86179673BD00400AF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				063FFE85179673BD00400AF3 /* BankAccount_Kata3.app */,
+				063FFEAE179673BF00400AF3 /* BankAccount_Kata3Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		063FFE87179673BD00400AF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				063FFEDE1796761300400AF3 /* LocalStorage.framework */,
+				063FFE88179673BD00400AF3 /* UIKit.framework */,
+				063FFE8A179673BD00400AF3 /* Foundation.framework */,
+				063FFE8C179673BD00400AF3 /* CoreGraphics.framework */,
+				063FFEAF179673BF00400AF3 /* SenTestingKit.framework */,
+				F00AD75BAA9843998F074152 /* libPods-BankAccount_Kata3Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		063FFE8E179673BD00400AF3 /* BankAccount_Kata3 */ = {
+			isa = PBXGroup;
+			children = (
+				063FFECE1796758E00400AF3 /* Entities */,
+				063FFEC71796755E00400AF3 /* Service */,
+				063FFEC61796755000400AF3 /* DAO */,
+				063FFE97179673BD00400AF3 /* AppDelegate.h */,
+				063FFE98179673BE00400AF3 /* AppDelegate.m */,
+				063FFEA0179673BE00400AF3 /* ViewController.h */,
+				063FFEA1179673BE00400AF3 /* ViewController.m */,
+				063FFEA3179673BE00400AF3 /* ViewController_iPhone.xib */,
+				063FFEA6179673BE00400AF3 /* ViewController_iPad.xib */,
+				063FFE8F179673BD00400AF3 /* Supporting Files */,
+			);
+			path = BankAccount_Kata3;
+			sourceTree = "<group>";
+		};
+		063FFE8F179673BD00400AF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				063FFE90179673BD00400AF3 /* BankAccount_Kata3-Info.plist */,
+				063FFE91179673BD00400AF3 /* InfoPlist.strings */,
+				063FFE94179673BD00400AF3 /* main.m */,
+				063FFE96179673BD00400AF3 /* BankAccount_Kata3-Prefix.pch */,
+				063FFE9A179673BE00400AF3 /* Default.png */,
+				063FFE9C179673BE00400AF3 /* Default@2x.png */,
+				063FFE9E179673BE00400AF3 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		063FFEB5179673BF00400AF3 /* BankAccount_Kata3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				063FFEBC179673BF00400AF3 /* BankAccount_Kata3Tests.m */,
+				063FFEB6179673BF00400AF3 /* Supporting Files */,
+			);
+			path = BankAccount_Kata3Tests;
+			sourceTree = "<group>";
+		};
+		063FFEB6179673BF00400AF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				063FFEB7179673BF00400AF3 /* BankAccount_Kata3Tests-Info.plist */,
+				063FFEB8179673BF00400AF3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		063FFEC61796755000400AF3 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				063FFED5179675D900400AF3 /* BankAccountDAO3.h */,
+				063FFED6179675D900400AF3 /* BankAccountDAO3.m */,
+				063FFED7179675D900400AF3 /* BankAccountLogDAO3.h */,
+				063FFED8179675D900400AF3 /* BankAccountLogDAO3.m */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		063FFEC71796755E00400AF3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				063FFEDB179675EB00400AF3 /* BankAccount3.h */,
+				063FFEDC179675EB00400AF3 /* BankAccount3.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		063FFECE1796758E00400AF3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				063FFECF179675B800400AF3 /* Account3.h */,
+				063FFED0179675B800400AF3 /* Account3.m */,
+				063FFED1179675B800400AF3 /* AccountLog3.h */,
+				063FFED2179675B800400AF3 /* AccountLog3.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		063FFE84179673BD00400AF3 /* BankAccount_Kata3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 063FFEC0179673BF00400AF3 /* Build configuration list for PBXNativeTarget "BankAccount_Kata3" */;
+			buildPhases = (
+				063FFE81179673BD00400AF3 /* Sources */,
+				063FFE82179673BD00400AF3 /* Frameworks */,
+				063FFE83179673BD00400AF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankAccount_Kata3;
+			productName = BankAccount_Kata3;
+			productReference = 063FFE85179673BD00400AF3 /* BankAccount_Kata3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		063FFEAD179673BF00400AF3 /* BankAccount_Kata3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 063FFEC3179673BF00400AF3 /* Build configuration list for PBXNativeTarget "BankAccount_Kata3Tests" */;
+			buildPhases = (
+				0A1D1C070A2A4B07A9578449 /* Check Pods Manifest.lock */,
+				063FFEA9179673BF00400AF3 /* Sources */,
+				063FFEAA179673BF00400AF3 /* Frameworks */,
+				063FFEAB179673BF00400AF3 /* Resources */,
+				063FFEAC179673BF00400AF3 /* ShellScript */,
+				BB38A6F232E04908A5CEF8CF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				063FFEB4179673BF00400AF3 /* PBXTargetDependency */,
+			);
+			name = BankAccount_Kata3Tests;
+			productName = BankAccount_Kata3Tests;
+			productReference = 063FFEAE179673BF00400AF3 /* BankAccount_Kata3Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		063FFE7D179673BD00400AF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Qsoft;
+			};
+			buildConfigurationList = 063FFE80179673BD00400AF3 /* Build configuration list for PBXProject "BankAccount_Kata3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 063FFE7C179673BD00400AF3;
+			productRefGroup = 063FFE86179673BD00400AF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				063FFE84179673BD00400AF3 /* BankAccount_Kata3 */,
+				063FFEAD179673BF00400AF3 /* BankAccount_Kata3Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		063FFE83179673BD00400AF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063FFE93179673BD00400AF3 /* InfoPlist.strings in Resources */,
+				063FFE9B179673BE00400AF3 /* Default.png in Resources */,
+				063FFE9D179673BE00400AF3 /* Default@2x.png in Resources */,
+				063FFE9F179673BE00400AF3 /* Default-568h@2x.png in Resources */,
+				063FFEA5179673BE00400AF3 /* ViewController_iPhone.xib in Resources */,
+				063FFEA8179673BE00400AF3 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		063FFEAB179673BF00400AF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063FFEBA179673BF00400AF3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		063FFEAC179673BF00400AF3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		0A1D1C070A2A4B07A9578449 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		BB38A6F232E04908A5CEF8CF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-BankAccount_Kata3Tests-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		063FFE81179673BD00400AF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063FFE95179673BD00400AF3 /* main.m in Sources */,
+				063FFE99179673BE00400AF3 /* AppDelegate.m in Sources */,
+				063FFEA2179673BE00400AF3 /* ViewController.m in Sources */,
+				063FFED3179675B800400AF3 /* Account3.m in Sources */,
+				063FFED4179675B800400AF3 /* AccountLog3.m in Sources */,
+				063FFED9179675D900400AF3 /* BankAccountDAO3.m in Sources */,
+				063FFEDA179675D900400AF3 /* BankAccountLogDAO3.m in Sources */,
+				063FFEDD179675EB00400AF3 /* BankAccount3.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		063FFEA9179673BF00400AF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063FFEBD179673BF00400AF3 /* BankAccount_Kata3Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		063FFEB4179673BF00400AF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 063FFE84179673BD00400AF3 /* BankAccount_Kata3 */;
+			targetProxy = 063FFEB3179673BF00400AF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		063FFE91179673BD00400AF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				063FFE92179673BD00400AF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		063FFEA3179673BE00400AF3 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				063FFEA4179673BE00400AF3 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		063FFEA6179673BE00400AF3 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				063FFEA7179673BE00400AF3 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		063FFEB8179673BF00400AF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				063FFEB9179673BF00400AF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		063FFEBE179673BF00400AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		063FFEBF179673BF00400AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+		063FFEC1179673BF00400AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BankAccount_Kata3/BankAccount_Kata3-Prefix.pch";
+				INFOPLIST_FILE = "BankAccount_Kata3/BankAccount_Kata3-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		063FFEC2179673BF00400AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BankAccount_Kata3/BankAccount_Kata3-Prefix.pch";
+				INFOPLIST_FILE = "BankAccount_Kata3/BankAccount_Kata3-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		063FFEC4179673BF00400AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB0531B59A704DFB8B1911AA /* Pods-BankAccount_Kata3Tests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BankAccount_Kata3.app/BankAccount_Kata3";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BankAccount_Kata3/BankAccount_Kata3-Prefix.pch";
+				INFOPLIST_FILE = "BankAccount_Kata3Tests/BankAccount_Kata3Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		063FFEC5179673BF00400AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB0531B59A704DFB8B1911AA /* Pods-BankAccount_Kata3Tests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BankAccount_Kata3.app/BankAccount_Kata3";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BankAccount_Kata3/BankAccount_Kata3-Prefix.pch";
+				INFOPLIST_FILE = "BankAccount_Kata3Tests/BankAccount_Kata3Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		063FFE80179673BD00400AF3 /* Build configuration list for PBXProject "BankAccount_Kata3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				063FFEBE179673BF00400AF3 /* Debug */,
+				063FFEBF179673BF00400AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		063FFEC0179673BF00400AF3 /* Build configuration list for PBXNativeTarget "BankAccount_Kata3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				063FFEC1179673BF00400AF3 /* Debug */,
+				063FFEC2179673BF00400AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		063FFEC3179673BF00400AF3 /* Build configuration list for PBXNativeTarget "BankAccount_Kata3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				063FFEC4179673BF00400AF3 /* Debug */,
+				063FFEC5179673BF00400AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 063FFE7D179673BD00400AF3 /* Project object */;
+}
