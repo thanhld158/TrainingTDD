@@ -24,12 +24,22 @@
 		063FFEB2179673BF00400AF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FFE8A179673BD00400AF3 /* Foundation.framework */; };
 		063FFEBA179673BF00400AF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 063FFEB8179673BF00400AF3 /* InfoPlist.strings */; };
 		063FFEBD179673BF00400AF3 /* BankAccount_Kata3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFEBC179673BF00400AF3 /* BankAccount_Kata3Tests.m */; };
-		063FFED3179675B800400AF3 /* Account3.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFED0179675B800400AF3 /* Account3.m */; };
-		063FFED4179675B800400AF3 /* AccountLog3.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFED2179675B800400AF3 /* AccountLog3.m */; };
-		063FFED9179675D900400AF3 /* BankAccountDAO3.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFED6179675D900400AF3 /* BankAccountDAO3.m */; };
-		063FFEDA179675D900400AF3 /* BankAccountLogDAO3.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFED8179675D900400AF3 /* BankAccountLogDAO3.m */; };
-		063FFEDD179675EB00400AF3 /* BankAccount3.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFEDC179675EB00400AF3 /* BankAccount3.m */; };
+		063FFED3179675B800400AF3 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFED0179675B800400AF3 /* Account.m */; };
+		063FFED4179675B800400AF3 /* AccountLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFED2179675B800400AF3 /* AccountLog.m */; };
+		063FFED9179675D900400AF3 /* BankAccountDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFED6179675D900400AF3 /* BankAccountDAO.m */; };
+		063FFEDA179675D900400AF3 /* BankAccountLogDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFED8179675D900400AF3 /* BankAccountLogDAO.m */; };
+		063FFEDD179675EB00400AF3 /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFEDC179675EB00400AF3 /* BankAccount.m */; };
 		063FFEDF1796761300400AF3 /* LocalStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FFEDE1796761300400AF3 /* LocalStorage.framework */; };
+		06BE58DA17991A120044B38A /* BankAccountDAOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE58D817991A120044B38A /* BankAccountDAOTest.m */; };
+		06BE58DB17991A120044B38A /* BankAccountLogDAOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE58D917991A120044B38A /* BankAccountLogDAOTest.m */; };
+		06BE58E417991AF00044B38A /* tc1.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58DC17991AF00044B38A /* tc1.sql */; };
+		06BE58E517991AF00044B38A /* tc2.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58DD17991AF00044B38A /* tc2.sql */; };
+		06BE58E617991AF00044B38A /* tc3.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58DE17991AF00044B38A /* tc3.sql */; };
+		06BE58E717991AF00044B38A /* tran_sc1.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58DF17991AF00044B38A /* tran_sc1.sql */; };
+		06BE58E817991AF00044B38A /* tran_sc2.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58E017991AF00044B38A /* tran_sc2.sql */; };
+		06BE58E917991AF00044B38A /* tran_sc3.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58E117991AF00044B38A /* tran_sc3.sql */; };
+		06BE58EA17991AF00044B38A /* tran_sc4.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58E217991AF00044B38A /* tran_sc4.sql */; };
+		06BE58EB17991AF00044B38A /* tran_sc5.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58E317991AF00044B38A /* tran_sc5.sql */; };
 		73FB0C82F11144218B85AC95 /* libPods-BankAccount_Kata3Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F00AD75BAA9843998F074152 /* libPods-BankAccount_Kata3Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -66,17 +76,27 @@
 		063FFEB7179673BF00400AF3 /* BankAccount_Kata3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BankAccount_Kata3Tests-Info.plist"; sourceTree = "<group>"; };
 		063FFEB9179673BF00400AF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		063FFEBC179673BF00400AF3 /* BankAccount_Kata3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAccount_Kata3Tests.m; sourceTree = "<group>"; };
-		063FFECF179675B800400AF3 /* Account3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account3.h; sourceTree = "<group>"; };
-		063FFED0179675B800400AF3 /* Account3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account3.m; sourceTree = "<group>"; };
-		063FFED1179675B800400AF3 /* AccountLog3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLog3.h; sourceTree = "<group>"; };
-		063FFED2179675B800400AF3 /* AccountLog3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLog3.m; sourceTree = "<group>"; };
-		063FFED5179675D900400AF3 /* BankAccountDAO3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountDAO3.h; sourceTree = "<group>"; };
-		063FFED6179675D900400AF3 /* BankAccountDAO3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountDAO3.m; sourceTree = "<group>"; };
-		063FFED7179675D900400AF3 /* BankAccountLogDAO3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountLogDAO3.h; sourceTree = "<group>"; };
-		063FFED8179675D900400AF3 /* BankAccountLogDAO3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountLogDAO3.m; sourceTree = "<group>"; };
-		063FFEDB179675EB00400AF3 /* BankAccount3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccount3.h; sourceTree = "<group>"; };
-		063FFEDC179675EB00400AF3 /* BankAccount3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount3.m; sourceTree = "<group>"; };
+		063FFECF179675B800400AF3 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		063FFED0179675B800400AF3 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		063FFED1179675B800400AF3 /* AccountLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLog.h; sourceTree = "<group>"; };
+		063FFED2179675B800400AF3 /* AccountLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLog.m; sourceTree = "<group>"; };
+		063FFED5179675D900400AF3 /* BankAccountDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountDAO.h; sourceTree = "<group>"; };
+		063FFED6179675D900400AF3 /* BankAccountDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountDAO.m; sourceTree = "<group>"; };
+		063FFED7179675D900400AF3 /* BankAccountLogDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountLogDAO.h; sourceTree = "<group>"; };
+		063FFED8179675D900400AF3 /* BankAccountLogDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountLogDAO.m; sourceTree = "<group>"; };
+		063FFEDB179675EB00400AF3 /* BankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccount.h; sourceTree = "<group>"; };
+		063FFEDC179675EB00400AF3 /* BankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount.m; sourceTree = "<group>"; };
 		063FFEDE1796761300400AF3 /* LocalStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LocalStorage.framework; sourceTree = "<group>"; };
+		06BE58D817991A120044B38A /* BankAccountDAOTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountDAOTest.m; sourceTree = "<group>"; };
+		06BE58D917991A120044B38A /* BankAccountLogDAOTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountLogDAOTest.m; sourceTree = "<group>"; };
+		06BE58DC17991AF00044B38A /* tc1.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tc1.sql; sourceTree = "<group>"; };
+		06BE58DD17991AF00044B38A /* tc2.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tc2.sql; sourceTree = "<group>"; };
+		06BE58DE17991AF00044B38A /* tc3.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tc3.sql; sourceTree = "<group>"; };
+		06BE58DF17991AF00044B38A /* tran_sc1.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tran_sc1.sql; sourceTree = "<group>"; };
+		06BE58E017991AF00044B38A /* tran_sc2.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tran_sc2.sql; sourceTree = "<group>"; };
+		06BE58E117991AF00044B38A /* tran_sc3.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tran_sc3.sql; sourceTree = "<group>"; };
+		06BE58E217991AF00044B38A /* tran_sc4.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tran_sc4.sql; sourceTree = "<group>"; };
+		06BE58E317991AF00044B38A /* tran_sc5.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tran_sc5.sql; sourceTree = "<group>"; };
 		DB0531B59A704DFB8B1911AA /* Pods-BankAccount_Kata3Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAccount_Kata3Tests.xcconfig"; path = "Pods/Pods-BankAccount_Kata3Tests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		F00AD75BAA9843998F074152 /* libPods-BankAccount_Kata3Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BankAccount_Kata3Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -174,6 +194,7 @@
 		063FFEB5179673BF00400AF3 /* BankAccount_Kata3Tests */ = {
 			isa = PBXGroup;
 			children = (
+				06BE58D7179919B80044B38A /* TestDAO */,
 				063FFEBC179673BF00400AF3 /* BankAccount_Kata3Tests.m */,
 				063FFEB6179673BF00400AF3 /* Supporting Files */,
 			);
@@ -183,6 +204,14 @@
 		063FFEB6179673BF00400AF3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				06BE58DC17991AF00044B38A /* tc1.sql */,
+				06BE58DD17991AF00044B38A /* tc2.sql */,
+				06BE58DE17991AF00044B38A /* tc3.sql */,
+				06BE58DF17991AF00044B38A /* tran_sc1.sql */,
+				06BE58E017991AF00044B38A /* tran_sc2.sql */,
+				06BE58E117991AF00044B38A /* tran_sc3.sql */,
+				06BE58E217991AF00044B38A /* tran_sc4.sql */,
+				06BE58E317991AF00044B38A /* tran_sc5.sql */,
 				063FFEB7179673BF00400AF3 /* BankAccount_Kata3Tests-Info.plist */,
 				063FFEB8179673BF00400AF3 /* InfoPlist.strings */,
 			);
@@ -192,10 +221,10 @@
 		063FFEC61796755000400AF3 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
-				063FFED5179675D900400AF3 /* BankAccountDAO3.h */,
-				063FFED6179675D900400AF3 /* BankAccountDAO3.m */,
-				063FFED7179675D900400AF3 /* BankAccountLogDAO3.h */,
-				063FFED8179675D900400AF3 /* BankAccountLogDAO3.m */,
+				063FFED5179675D900400AF3 /* BankAccountDAO.h */,
+				063FFED6179675D900400AF3 /* BankAccountDAO.m */,
+				063FFED7179675D900400AF3 /* BankAccountLogDAO.h */,
+				063FFED8179675D900400AF3 /* BankAccountLogDAO.m */,
 			);
 			name = DAO;
 			sourceTree = "<group>";
@@ -203,8 +232,8 @@
 		063FFEC71796755E00400AF3 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				063FFEDB179675EB00400AF3 /* BankAccount3.h */,
-				063FFEDC179675EB00400AF3 /* BankAccount3.m */,
+				063FFEDB179675EB00400AF3 /* BankAccount.h */,
+				063FFEDC179675EB00400AF3 /* BankAccount.m */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -212,12 +241,21 @@
 		063FFECE1796758E00400AF3 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				063FFECF179675B800400AF3 /* Account3.h */,
-				063FFED0179675B800400AF3 /* Account3.m */,
-				063FFED1179675B800400AF3 /* AccountLog3.h */,
-				063FFED2179675B800400AF3 /* AccountLog3.m */,
+				063FFECF179675B800400AF3 /* Account.h */,
+				063FFED0179675B800400AF3 /* Account.m */,
+				063FFED1179675B800400AF3 /* AccountLog.h */,
+				063FFED2179675B800400AF3 /* AccountLog.m */,
 			);
 			name = Entities;
+			sourceTree = "<group>";
+		};
+		06BE58D7179919B80044B38A /* TestDAO */ = {
+			isa = PBXGroup;
+			children = (
+				06BE58D817991A120044B38A /* BankAccountDAOTest.m */,
+				06BE58D917991A120044B38A /* BankAccountLogDAOTest.m */,
+			);
+			name = TestDAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +345,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				063FFEBA179673BF00400AF3 /* InfoPlist.strings in Resources */,
+				06BE58E417991AF00044B38A /* tc1.sql in Resources */,
+				06BE58E517991AF00044B38A /* tc2.sql in Resources */,
+				06BE58E617991AF00044B38A /* tc3.sql in Resources */,
+				06BE58E717991AF00044B38A /* tran_sc1.sql in Resources */,
+				06BE58E817991AF00044B38A /* tran_sc2.sql in Resources */,
+				06BE58E917991AF00044B38A /* tran_sc3.sql in Resources */,
+				06BE58EA17991AF00044B38A /* tran_sc4.sql in Resources */,
+				06BE58EB17991AF00044B38A /* tran_sc5.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,11 +410,11 @@
 				063FFE95179673BD00400AF3 /* main.m in Sources */,
 				063FFE99179673BE00400AF3 /* AppDelegate.m in Sources */,
 				063FFEA2179673BE00400AF3 /* ViewController.m in Sources */,
-				063FFED3179675B800400AF3 /* Account3.m in Sources */,
-				063FFED4179675B800400AF3 /* AccountLog3.m in Sources */,
-				063FFED9179675D900400AF3 /* BankAccountDAO3.m in Sources */,
-				063FFEDA179675D900400AF3 /* BankAccountLogDAO3.m in Sources */,
-				063FFEDD179675EB00400AF3 /* BankAccount3.m in Sources */,
+				063FFED3179675B800400AF3 /* Account.m in Sources */,
+				063FFED4179675B800400AF3 /* AccountLog.m in Sources */,
+				063FFED9179675D900400AF3 /* BankAccountDAO.m in Sources */,
+				063FFEDA179675D900400AF3 /* BankAccountLogDAO.m in Sources */,
+				063FFEDD179675EB00400AF3 /* BankAccount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +423,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				063FFEBD179673BF00400AF3 /* BankAccount_Kata3Tests.m in Sources */,
+				06BE58DA17991A120044B38A /* BankAccountDAOTest.m in Sources */,
+				06BE58DB17991A120044B38A /* BankAccountLogDAOTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

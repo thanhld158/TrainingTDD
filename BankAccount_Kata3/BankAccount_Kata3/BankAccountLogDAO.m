@@ -1,17 +1,17 @@
 //
-//  BankAccountLogDAO3.m
+//  BankAccountLogDAO.m
 //  BankAccount
 //
 //  Created by Le Duy Thanh on 09/07/2013.
 //  Copyright (c) 2013 Qsoft. All rights reserved.
 //
 
-#import "BankAccountLogDAO3.h"
-#import "AccountLog3.h"
+#import "BankAccountLogDAO.h"
+#import "AccountLog.h"
 
-@implementation BankAccountLogDAO3
+@implementation BankAccountLogDAO
 
-- (BOOL)insertAccountLogForTransaction:(AccountLog3 *)accLog {
+- (BOOL)insertAccountLogForTransaction:(AccountLog *)accLog {
     return NO;
 }
 

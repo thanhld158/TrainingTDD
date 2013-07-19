@@ -15,24 +15,24 @@
 //
 
 #import "Kiwi.h"
-#import "BankAccountDAO3.h"
-#import "BankAccount3.h"
-#import "BankAccountLogDAO3.h"
-#import "AccountLog3.h"
-#import "Account3.h"
+#import "BankAccountDAO.h"
+#import "BankAccount.h"
+#import "BankAccountLogDAO.h"
+#import "AccountLog.h"
+#import "Account.h"
 
 SPEC_BEGIN(BankAccountTestThird)
 
 describe(@"Test bank account class", ^{
-    __block BankAccount3 *sut;
-    __block BankAccountDAO3 *bankAccountDAO;
+    __block BankAccount *sut;
+    __block BankAccountDAO *bankAccountDAO;
     __block NSString *mockAccountNumber;
-    __block BankAccountLogDAO3 *bankAccountLogDAO;
+    __block BankAccountLogDAO *bankAccountLogDAO;
     
     beforeEach(^{
-        sut = [[BankAccount3 alloc] init];
-        bankAccountDAO = [BankAccountDAO3 nullMock];
-        bankAccountLogDAO = [BankAccountLogDAO3 nullMock];
+        sut = [[BankAccount alloc] init];
+        bankAccountDAO = [BankAccountDAO nullMock];
+        bankAccountLogDAO = [BankAccountLogDAO nullMock];
         mockAccountNumber = [NSString nullMock];
         sut.bankAccountDAO = bankAccountDAO;
         sut.bankAccountLogDAO = bankAccountLogDAO;
@@ -46,7 +46,7 @@ describe(@"Test bank account class", ^{
     
     context(@"Setup bank account", ^{
         it(@"1. Open new account with an accountNumber", ^{
-            Account3 *accountOpened;
+            Account *accountOpened;
             NSDate *openDate = [NSDate nullMock];
             
             [NSDate stub:@selector(date) andReturn:openDate];
@@ -62,7 +62,7 @@ describe(@"Test bank account class", ^{
         });
         
         it(@"2. Get account infomation", ^{
-            Account3 *accountReturn;
+            Account *accountReturn;
             
             //Check
             [[bankAccountDAO should] receive:@selector(getAccountWithAccountNumber:) andReturn:any()];
@@ -77,10 +77,10 @@ describe(@"Test bank account class", ^{
     
     context(@"Operation with bank account", ^{
         it(@"3. deposit into bank account, result: balance increase amount", ^{
-            Account3 *accountAfterDeposit;
+            Account *accountAfterDeposit;
             NSNumber *amount = @(50);
             NSString *description = @"deposit";
-            Account3 *accountBeforeDeposit = [Account3 nullMock];
+            Account *accountBeforeDeposit = [Account nullMock];
             
             [accountBeforeDeposit stub:@selector(balance) andReturn:@(100)];
             [sut stub:@selector(getAccount:) andReturn:accountBeforeDeposit withArguments:mockAccountNumber];
@@ -94,7 +94,7 @@ describe(@"Test bank account class", ^{
             NSNumber *amount = @(50);
             NSString *description = @"deposit";
             NSDate *mockDate = [NSDate nullMock];
-            AccountLog3 *mockAccLog = [AccountLog3 nullMock];
+            AccountLog *mockAccLog = [AccountLog nullMock];
             
             [NSDate stub:@selector(date) andReturn:mockDate];
             [[sut should] receive:@selector(createAccLogWithAccountNumber:amount:andDes:)];
@@ -105,20 +105,20 @@ describe(@"Test bank account class", ^{
             KWCaptureSpy *spy = [bankAccountLogDAO captureArgument:@selector(insertAccountLogForTransaction:) atIndex:0];
             [sut deposit:mockAccountNumber amount:amount andDes:description];
             
-            AccountLog3 *accLogSaved = spy.argument;
+            AccountLog *accLogSaved = spy.argument;
             [[accLogSaved should] equal:mockAccLog];
         });
         
         it(@"5. withdraw from bank account, result: balance decrease amount", ^{
             NSNumber *amount = @(50);
             NSString *description = @"withdraw";
-            Account3 *accountBefore = [Account3 nullMock];
+            Account *accountBefore = [Account nullMock];
             
             [bankAccountDAO stub:@selector(updateAccount:) andReturn:theValue(YES)];
             [accountBefore stub:@selector(balance) andReturn:@(100)];
             [sut stub:@selector(getAccount:) andReturn:accountBefore withArguments:mockAccountNumber];
             
-            Account3 *accountAfterWithdraw = [sut withdraw:mockAccountNumber amount:amount andDes:description];
+            Account *accountAfterWithdraw = [sut withdraw:mockAccountNumber amount:amount andDes:description];
             [[accountAfterWithdraw.balance should] equal:@(accountBefore.balance.doubleValue - amount.doubleValue)];
         });
         
@@ -133,7 +133,7 @@ describe(@"Test bank account class", ^{
             KWCaptureSpy *spy = [bankAccountLogDAO captureArgument:@selector(insertAccountLogForTransaction:) atIndex:0];
             
             [sut withdraw:mockAccountNumber amount:amount andDes:description];
-            AccountLog3 *accLog = spy.argument;
+            AccountLog *accLog = spy.argument;
             [[accLog.amount should] equal:@(-amount.doubleValue)];
         });
     });

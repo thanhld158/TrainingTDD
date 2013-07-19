@@ -1,5 +1,5 @@
 //
-//  Account3.h
+//  Account.h
 //  BankAccount
 //
 //  Created by Le Duy Thanh on 05/07/2013.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Account3 : NSObject
+@interface Account : NSObject
 @property (strong, nonatomic) NSString *accountNumber;
 @property (strong, nonatomic) NSNumber *balance;
 @property (strong, nonatomic) NSDate *openTimeStamp;
