@@ -10,9 +10,20 @@
 #import "Account.h"
 
 @implementation BankAccountDAO
+@synthesize dataAccessHelper;
+@synthesize error;
 
 - (BOOL)insertNewAccount:(Account *)newAcc {
-    return NO;
+    __block BOOL val;
+    [dataAccessHelper inTransaction:^(FMDatabase *db, BOOL *rollback) {
+        NSDateFormatter *dateformat = [[NSDateFormatter alloc] init];
+        [dateformat setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
+        NSString *dateOpended = [dateformat stringFromDate:newAcc.openTimeStamp];
+        
+        NSString *stm = [NSString stringWithFormat:@"insert into Account(accountnumber,balance,openTimeStamp) values('%@', %@, '%@')", newAcc.accountNumber, newAcc.balance, dateOpended];
+        val = [db executeUpdate:stm];
+    }];
+    return val;
 }
 
 - (Account *)getAccountWithAccountNumber:(NSString *)accountNumber {

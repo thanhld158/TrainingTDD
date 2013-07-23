@@ -9,6 +9,7 @@
 #import "Kiwi.h"
 #import "BankAccountDAO.h"
 #import <LocalStorage/LocalStorage.h>
+#import "Account.h"
 
 SPEC_BEGIN(BankAccountDAOTest)
 describe(@"BankAccountDAOTest", ^{
@@ -20,7 +21,7 @@ describe(@"BankAccountDAOTest", ^{
         env = [[DBEnviroment alloc] init];
         sut = [[BankAccountDAO alloc] init];
         sut.dataAccessHelper = env.databaseQueue;
-        accNumber = @"1234567890";
+        accNumber = @"thanhld";
     });
     
     afterEach(^{
@@ -29,6 +30,32 @@ describe(@"BankAccountDAOTest", ^{
         accNumber = nil;
     });
     
-    it(@"<#string#>", <#^(void)aBlock#>)
+    context(@"insert new account", ^{
+        it(@"insert into empty database should success", ^{
+            Account *accountWillInsert = [[Account alloc] init];
+            accountWillInsert.accountNumber = accNumber;
+            accountWillInsert.balance = @0;
+            accountWillInsert.openTimeStamp = [NSDate date];
+            
+            NSString *scriptFilePath = [[NSBundle mainBundle] pathForResource:@"tc1" ofType:@"sql"];
+            [env loadScriptFile:scriptFilePath];
+            
+            BOOL val = [sut insertNewAccount:accountWillInsert];
+            [[theValue(val) should] equal:theValue(YES)];
+        });
+        
+        it(@"insert into which's accountnumber is exists", ^{
+            Account *accountWillInsert = [[Account alloc] init];
+            accountWillInsert.accountNumber = accNumber;
+            accountWillInsert.balance = @0;
+            accountWillInsert.openTimeStamp = [NSDate date];
+            
+            NSString *scriptFilePath = [[NSBundle mainBundle] pathForResource:@"tc2" ofType:@"sql"];
+            [env loadScriptFile:scriptFilePath];
+            
+            BOOL val = [sut insertNewAccount:accountWillInsert];
+            [[theValue(val) should] equal:theValue(NO)];
+        });
+    });
 });
 SPEC_END
