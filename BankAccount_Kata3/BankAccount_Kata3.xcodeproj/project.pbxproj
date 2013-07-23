@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		063A9E8C179D102400EDC186 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 063A9E8B179D102400EDC186 /* libsqlite3.dylib */; };
+		063A9E8E179D110B00EDC186 /* LocalStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063A9E8D179D110B00EDC186 /* LocalStorage.framework */; };
 		063FFE89179673BD00400AF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FFE88179673BD00400AF3 /* UIKit.framework */; };
 		063FFE8B179673BD00400AF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FFE8A179673BD00400AF3 /* Foundation.framework */; };
 		063FFE8D179673BD00400AF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FFE8C179673BD00400AF3 /* CoreGraphics.framework */; };
@@ -29,7 +31,6 @@
 		063FFED9179675D900400AF3 /* BankAccountDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFED6179675D900400AF3 /* BankAccountDAO.m */; };
 		063FFEDA179675D900400AF3 /* BankAccountLogDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFED8179675D900400AF3 /* BankAccountLogDAO.m */; };
 		063FFEDD179675EB00400AF3 /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFEDC179675EB00400AF3 /* BankAccount.m */; };
-		063FFEDF1796761300400AF3 /* LocalStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FFEDE1796761300400AF3 /* LocalStorage.framework */; };
 		06BE58DA17991A120044B38A /* BankAccountDAOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE58D817991A120044B38A /* BankAccountDAOTest.m */; };
 		06BE58DB17991A120044B38A /* BankAccountLogDAOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE58D917991A120044B38A /* BankAccountLogDAOTest.m */; };
 		06BE58E417991AF00044B38A /* tc1.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58DC17991AF00044B38A /* tc1.sql */; };
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		063A9E8B179D102400EDC186 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		063A9E8D179D110B00EDC186 /* LocalStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LocalStorage.framework; sourceTree = "<group>"; };
 		063FFE85179673BD00400AF3 /* BankAccount_Kata3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankAccount_Kata3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		063FFE88179673BD00400AF3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		063FFE8A179673BD00400AF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,7 +89,6 @@
 		063FFED8179675D900400AF3 /* BankAccountLogDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountLogDAO.m; sourceTree = "<group>"; };
 		063FFEDB179675EB00400AF3 /* BankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccount.h; sourceTree = "<group>"; };
 		063FFEDC179675EB00400AF3 /* BankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount.m; sourceTree = "<group>"; };
-		063FFEDE1796761300400AF3 /* LocalStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LocalStorage.framework; sourceTree = "<group>"; };
 		06BE58D817991A120044B38A /* BankAccountDAOTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountDAOTest.m; sourceTree = "<group>"; };
 		06BE58D917991A120044B38A /* BankAccountLogDAOTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountLogDAOTest.m; sourceTree = "<group>"; };
 		06BE58DC17991AF00044B38A /* tc1.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tc1.sql; sourceTree = "<group>"; };
@@ -106,10 +108,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063A9E8C179D102400EDC186 /* libsqlite3.dylib in Frameworks */,
 				063FFE89179673BD00400AF3 /* UIKit.framework in Frameworks */,
 				063FFE8B179673BD00400AF3 /* Foundation.framework in Frameworks */,
 				063FFE8D179673BD00400AF3 /* CoreGraphics.framework in Frameworks */,
-				063FFEDF1796761300400AF3 /* LocalStorage.framework in Frameworks */,
+				063A9E8E179D110B00EDC186 /* LocalStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +133,7 @@
 		063FFE7C179673BD00400AF3 = {
 			isa = PBXGroup;
 			children = (
+				063A9E8B179D102400EDC186 /* libsqlite3.dylib */,
 				063FFE8E179673BD00400AF3 /* BankAccount_Kata3 */,
 				063FFEB5179673BF00400AF3 /* BankAccount_Kata3Tests */,
 				063FFE87179673BD00400AF3 /* Frameworks */,
@@ -150,7 +154,7 @@
 		063FFE87179673BD00400AF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				063FFEDE1796761300400AF3 /* LocalStorage.framework */,
+				063A9E8D179D110B00EDC186 /* LocalStorage.framework */,
 				063FFE88179673BD00400AF3 /* UIKit.framework */,
 				063FFE8A179673BD00400AF3 /* Foundation.framework */,
 				063FFE8C179673BD00400AF3 /* CoreGraphics.framework */,
@@ -574,6 +578,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BankAccount_Kata3/BankAccount_Kata3-Prefix.pch";
@@ -593,6 +598,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BankAccount_Kata3/BankAccount_Kata3-Prefix.pch";
