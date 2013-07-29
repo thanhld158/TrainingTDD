@@ -1,1 +1,1 @@
-CREATE TABLE Account (accountnumber text PRIMARY KEY,balance integer,openTimeStamp text);
+CREATE TABLE Account (accountNumber text PRIMARY KEY,balance integer,openTimeStamp text);

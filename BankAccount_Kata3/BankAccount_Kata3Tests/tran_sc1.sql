@@ -1,1 +1,1 @@
-CREATE TABLE Tran (transactionid integer PRIMARY KEY AUTOINCREMENT,accountnumber text,amount double,description text,timestamp text);
+CREATE TABLE BankAccountLog (transactionid integer PRIMARY KEY AUTOINCREMENT,accountNumber text,amount double,description text,timestamp text);

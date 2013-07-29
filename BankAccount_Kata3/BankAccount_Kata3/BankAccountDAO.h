@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <LocalStorage/LocalStorage.h>
 @class Account;
 
 @interface BankAccountDAO : NSObject
@@ -16,6 +15,5 @@
 - (BOOL )updateAccount:(Account *)account;
 
 @property (nonatomic, strong) FMDatabaseQueue *dataAccessHelper;
-
 @property (nonatomic, strong) NSError *error;
 @end

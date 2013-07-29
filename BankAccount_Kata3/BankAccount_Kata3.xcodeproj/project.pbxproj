@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		063870C017A6277E008F4726 /* tc1.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58DC17991AF00044B38A /* tc1.sql */; };
+		063870C117A6277E008F4726 /* tc2.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58DD17991AF00044B38A /* tc2.sql */; };
+		063870C217A6277E008F4726 /* tc3.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58DE17991AF00044B38A /* tc3.sql */; };
+		063870C317A6277E008F4726 /* tran_sc1.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58DF17991AF00044B38A /* tran_sc1.sql */; };
+		063870C417A6277E008F4726 /* tran_sc2.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58E017991AF00044B38A /* tran_sc2.sql */; };
+		063870C517A6277E008F4726 /* tran_sc3.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58E117991AF00044B38A /* tran_sc3.sql */; };
+		063870C617A6277E008F4726 /* tran_sc4.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58E217991AF00044B38A /* tran_sc4.sql */; };
+		063870C717A6277E008F4726 /* tran_sc5.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58E317991AF00044B38A /* tran_sc5.sql */; };
 		063A9E8C179D102400EDC186 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 063A9E8B179D102400EDC186 /* libsqlite3.dylib */; };
-		063A9E8E179D110B00EDC186 /* LocalStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063A9E8D179D110B00EDC186 /* LocalStorage.framework */; };
 		063FFE89179673BD00400AF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FFE88179673BD00400AF3 /* UIKit.framework */; };
 		063FFE8B179673BD00400AF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FFE8A179673BD00400AF3 /* Foundation.framework */; };
 		063FFE8D179673BD00400AF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FFE8C179673BD00400AF3 /* CoreGraphics.framework */; };
@@ -41,6 +48,10 @@
 		06BE58E917991AF00044B38A /* tran_sc3.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58E117991AF00044B38A /* tran_sc3.sql */; };
 		06BE58EA17991AF00044B38A /* tran_sc4.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58E217991AF00044B38A /* tran_sc4.sql */; };
 		06BE58EB17991AF00044B38A /* tran_sc5.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58E317991AF00044B38A /* tran_sc5.sql */; };
+		06E24DB7179E62650004B0A2 /* LocalStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E24DB6179E62650004B0A2 /* LocalStorage.framework */; };
+		06E24DB8179E65B30004B0A2 /* LocalStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E24DB6179E62650004B0A2 /* LocalStorage.framework */; };
+		06E24DB9179E65C30004B0A2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 063A9E8B179D102400EDC186 /* libsqlite3.dylib */; };
+		06E24DBB179E66E60004B0A2 /* Todo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 06E24DBA179E66E60004B0A2 /* Todo.txt */; };
 		73FB0C82F11144218B85AC95 /* libPods-BankAccount_Kata3Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F00AD75BAA9843998F074152 /* libPods-BankAccount_Kata3Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +67,6 @@
 
 /* Begin PBXFileReference section */
 		063A9E8B179D102400EDC186 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		063A9E8D179D110B00EDC186 /* LocalStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LocalStorage.framework; sourceTree = "<group>"; };
 		063FFE85179673BD00400AF3 /* BankAccount_Kata3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankAccount_Kata3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		063FFE88179673BD00400AF3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		063FFE8A179673BD00400AF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,6 +109,8 @@
 		06BE58E117991AF00044B38A /* tran_sc3.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tran_sc3.sql; sourceTree = "<group>"; };
 		06BE58E217991AF00044B38A /* tran_sc4.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tran_sc4.sql; sourceTree = "<group>"; };
 		06BE58E317991AF00044B38A /* tran_sc5.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tran_sc5.sql; sourceTree = "<group>"; };
+		06E24DB6179E62650004B0A2 /* LocalStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LocalStorage.framework; sourceTree = "<group>"; };
+		06E24DBA179E66E60004B0A2 /* Todo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Todo.txt; sourceTree = "<group>"; };
 		DB0531B59A704DFB8B1911AA /* Pods-BankAccount_Kata3Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAccount_Kata3Tests.xcconfig"; path = "Pods/Pods-BankAccount_Kata3Tests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		F00AD75BAA9843998F074152 /* libPods-BankAccount_Kata3Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BankAccount_Kata3Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -108,11 +120,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06E24DB7179E62650004B0A2 /* LocalStorage.framework in Frameworks */,
 				063A9E8C179D102400EDC186 /* libsqlite3.dylib in Frameworks */,
 				063FFE89179673BD00400AF3 /* UIKit.framework in Frameworks */,
 				063FFE8B179673BD00400AF3 /* Foundation.framework in Frameworks */,
 				063FFE8D179673BD00400AF3 /* CoreGraphics.framework in Frameworks */,
-				063A9E8E179D110B00EDC186 /* LocalStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +136,8 @@
 				063FFEB1179673BF00400AF3 /* UIKit.framework in Frameworks */,
 				063FFEB2179673BF00400AF3 /* Foundation.framework in Frameworks */,
 				73FB0C82F11144218B85AC95 /* libPods-BankAccount_Kata3Tests.a in Frameworks */,
+				06E24DB8179E65B30004B0A2 /* LocalStorage.framework in Frameworks */,
+				06E24DB9179E65C30004B0A2 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +147,7 @@
 		063FFE7C179673BD00400AF3 = {
 			isa = PBXGroup;
 			children = (
-				063A9E8B179D102400EDC186 /* libsqlite3.dylib */,
+				06E24DBA179E66E60004B0A2 /* Todo.txt */,
 				063FFE8E179673BD00400AF3 /* BankAccount_Kata3 */,
 				063FFEB5179673BF00400AF3 /* BankAccount_Kata3Tests */,
 				063FFE87179673BD00400AF3 /* Frameworks */,
@@ -154,7 +168,8 @@
 		063FFE87179673BD00400AF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				063A9E8D179D110B00EDC186 /* LocalStorage.framework */,
+				06E24DB6179E62650004B0A2 /* LocalStorage.framework */,
+				063A9E8B179D102400EDC186 /* libsqlite3.dylib */,
 				063FFE88179673BD00400AF3 /* UIKit.framework */,
 				063FFE8A179673BD00400AF3 /* Foundation.framework */,
 				063FFE8C179673BD00400AF3 /* CoreGraphics.framework */,
@@ -335,12 +350,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063870C017A6277E008F4726 /* tc1.sql in Resources */,
+				063870C117A6277E008F4726 /* tc2.sql in Resources */,
+				063870C217A6277E008F4726 /* tc3.sql in Resources */,
+				063870C317A6277E008F4726 /* tran_sc1.sql in Resources */,
+				063870C417A6277E008F4726 /* tran_sc2.sql in Resources */,
+				063870C517A6277E008F4726 /* tran_sc3.sql in Resources */,
+				063870C617A6277E008F4726 /* tran_sc4.sql in Resources */,
+				063870C717A6277E008F4726 /* tran_sc5.sql in Resources */,
 				063FFE93179673BD00400AF3 /* InfoPlist.strings in Resources */,
 				063FFE9B179673BE00400AF3 /* Default.png in Resources */,
 				063FFE9D179673BE00400AF3 /* Default@2x.png in Resources */,
 				063FFE9F179673BE00400AF3 /* Default-568h@2x.png in Resources */,
 				063FFEA5179673BE00400AF3 /* ViewController_iPhone.xib in Resources */,
 				063FFEA8179673BE00400AF3 /* ViewController_iPad.xib in Resources */,
+				06E24DBB179E66E60004B0A2 /* Todo.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,7 +531,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = armv7;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -534,7 +558,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = armv7;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -549,7 +573,7 @@
 				GCC_PREFIX_HEADER = "BankAccount_Kata3/BankAccount_Kata3-Prefix.pch";
 				INFOPLIST_FILE = "BankAccount_Kata3/BankAccount_Kata3-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = armv7;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -565,7 +589,7 @@
 				GCC_PREFIX_HEADER = "BankAccount_Kata3/BankAccount_Kata3-Prefix.pch";
 				INFOPLIST_FILE = "BankAccount_Kata3/BankAccount_Kata3-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = armv7;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -585,7 +609,7 @@
 				INFOPLIST_FILE = "BankAccount_Kata3Tests/BankAccount_Kata3Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				VALID_ARCHS = armv7;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -605,7 +629,7 @@
 				INFOPLIST_FILE = "BankAccount_Kata3Tests/BankAccount_Kata3Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				VALID_ARCHS = armv7;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
