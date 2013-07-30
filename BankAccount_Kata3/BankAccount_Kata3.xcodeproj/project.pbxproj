@@ -38,6 +38,8 @@
 		063FFED9179675D900400AF3 /* BankAccountDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFED6179675D900400AF3 /* BankAccountDAO.m */; };
 		063FFEDA179675D900400AF3 /* BankAccountLogDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFED8179675D900400AF3 /* BankAccountLogDAO.m */; };
 		063FFEDD179675EB00400AF3 /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFEDC179675EB00400AF3 /* BankAccount.m */; };
+		06AD88A417A7970B0026D821 /* BankAccountDAORound2Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 06AD88A317A7970B0026D821 /* BankAccountDAORound2Test.m */; };
+		06AD88A717A7A5460026D821 /* BankAccountLogDAOTestRound2.m in Sources */ = {isa = PBXBuildFile; fileRef = 06AD88A617A7A5460026D821 /* BankAccountLogDAOTestRound2.m */; };
 		06BE58DA17991A120044B38A /* BankAccountDAOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE58D817991A120044B38A /* BankAccountDAOTest.m */; };
 		06BE58DB17991A120044B38A /* BankAccountLogDAOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BE58D917991A120044B38A /* BankAccountLogDAOTest.m */; };
 		06BE58E417991AF00044B38A /* tc1.sql in Resources */ = {isa = PBXBuildFile; fileRef = 06BE58DC17991AF00044B38A /* tc1.sql */; };
@@ -99,6 +101,8 @@
 		063FFED8179675D900400AF3 /* BankAccountLogDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountLogDAO.m; sourceTree = "<group>"; };
 		063FFEDB179675EB00400AF3 /* BankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccount.h; sourceTree = "<group>"; };
 		063FFEDC179675EB00400AF3 /* BankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount.m; sourceTree = "<group>"; };
+		06AD88A317A7970B0026D821 /* BankAccountDAORound2Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountDAORound2Test.m; sourceTree = "<group>"; };
+		06AD88A617A7A5460026D821 /* BankAccountLogDAOTestRound2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountLogDAOTestRound2.m; sourceTree = "<group>"; };
 		06BE58D817991A120044B38A /* BankAccountDAOTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountDAOTest.m; sourceTree = "<group>"; };
 		06BE58D917991A120044B38A /* BankAccountLogDAOTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountLogDAOTest.m; sourceTree = "<group>"; };
 		06BE58DC17991AF00044B38A /* tc1.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tc1.sql; sourceTree = "<group>"; };
@@ -273,6 +277,8 @@
 			children = (
 				06BE58D817991A120044B38A /* BankAccountDAOTest.m */,
 				06BE58D917991A120044B38A /* BankAccountLogDAOTest.m */,
+				06AD88A317A7970B0026D821 /* BankAccountDAORound2Test.m */,
+				06AD88A617A7A5460026D821 /* BankAccountLogDAOTestRound2.m */,
 			);
 			name = TestDAO;
 			sourceTree = "<group>";
@@ -453,6 +459,8 @@
 				063FFEBD179673BF00400AF3 /* BankAccount_Kata3Tests.m in Sources */,
 				06BE58DA17991A120044B38A /* BankAccountDAOTest.m in Sources */,
 				06BE58DB17991A120044B38A /* BankAccountLogDAOTest.m in Sources */,
+				06AD88A417A7970B0026D821 /* BankAccountDAORound2Test.m in Sources */,
+				06AD88A717A7A5460026D821 /* BankAccountLogDAOTestRound2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
